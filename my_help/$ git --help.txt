@@ -1,0 +1,9 @@
+$ mkdir -m755 test - сщздание папки (- права) (названия папки)
+$ cd .. переход
+$ git init создания пустого репозитория
+$ git status - проверка статуса
+$ git add - добавить файлы
+$ git commit -m"my first commit" создания комита
+$ git log проверка комитов
+$ ssh-keygen создания ssh-ключа
+$ cat ~/.ssh/id_rsa.pub - просмотр ключа
