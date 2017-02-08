@@ -1,0 +1,3284 @@
+User@WIN-F15OM6UO87B MINGW64 ~
+$ ls
+AppData/
+'Application Data'@
+Contacts/
+Cookies@
+Desktop/
+Documents/
+Downloads/
+Favorites/
+Links/
+'Local Settings'@
+Music/
+NTUSER.DAT
+NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TM.blf
+NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMConta                                            iner00000000000000000001.regtrans-ms
+NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMConta                                            iner00000000000000000002.regtrans-ms
+NetHood@
+Pictures/
+PrintHood@
+Recent@
+'Saved Games'/
+Searches/
+SendTo@
+Tracing/
+Videos/
+ntuser.dat.LOG1
+ntuser.dat.LOG2
+ntuser.ini
+''$'\320\223\320\273\320\260\320\262\320\275\320\276\320                                            \265'' '$'\320\274\320\265\320\275\321\216'@
+''$'\320\232\320\276\320\274\320\277\321\214\321\216\321                                            \202\320\265\321\200'' - '$'\320\257\321\200\320\273\321                                            \213\320\272''.lnk'*
+''$'\320\234\320\276\320\270'' '$'\320\264\320\276\320\2                                            72\321\203\320\274\320\265\320\275\321\202\321\213'@
+''$'\320\250\320\260\320\261\320\273\320\276\320\275\321                                            \213'@
+
+User@WIN-F15OM6UO87B MINGW64 ~
+$ cd Music/
+
+User@WIN-F15OM6UO87B MINGW64 ~/Music
+$ ls
+desktop.ini
+
+User@WIN-F15OM6UO87B MINGW64 ~/Music
+$ ls -la
+total 9
+drwxr-xr-x 1 User 197121   0 Nov  6 01:36 ./
+drwxr-xr-x 1 User 197121   0 Nov 29 00:25 ../
+-rw-r--r-- 1 User 197121 504 Nov  6 01:36 desktop.ini
+
+User@WIN-F15OM6UO87B MINGW64 ~/Music
+$ ls -lat
+total 9
+drwxr-xr-x 1 User 197121   0 Nov 29 00:25 ../
+drwxr-xr-x 1 User 197121   0 Nov  6 01:36 ./
+-rw-r--r-- 1 User 197121 504 Nov  6 01:36 desktop.ini
+
+User@WIN-F15OM6UO87B MINGW64 ~/Music
+$ man ls
+bash: man: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/Music
+$ help ls
+bash: help: no help topics match `ls'.  Try `help help' or `man -k ls' or                            `info ls'.
+
+User@WIN-F15OM6UO87B MINGW64 ~/Music
+$ ls --help
+Usage: ls [OPTION]... [FILE]...
+List information about the FILEs (the current directory by default).
+Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -a, --all                  do not ignore entries starting with .
+  -A, --almost-all           do not list implied . and ..
+      --author               with -l, print the author of each file
+  -b, --escape               print C-style escapes for nongraphic charact                           ers
+      --block-size=SIZE      scale sizes by SIZE before printing them; e.                           g.,
+                               '--block-size=M' prints sizes in units of
+                               1,048,576 bytes; see SIZE format below
+  -B, --ignore-backups       do not list implied entries ending with ~
+  -c                         with -lt: sort by, and show, ctime (time of                            last
+                               modification of file status information);
+                               with -l: show ctime and sort by name;
+                               otherwise: sort by ctime, newest first
+  -C                         list entries by columns
+      --color[=WHEN]         colorize the output; WHEN can be 'always' (d                           efault
+                               if omitted), 'auto', or 'never'; more info                            below
+  -d, --directory            list directories themselves, not their conte                           nts
+  -D, --dired                generate output designed for Emacs' dired mo                           de
+  -f                         do not sort, enable -aU, disable -ls --color
+  -F, --classify             append indicator (one of */=>@|) to entries
+      --file-type            likewise, except do not append '*'
+      --format=WORD          across -x, commas -m, horizontal -x, long -l                           ,
+                               single-column -1, verbose -l, vertical -C
+      --full-time            like -l --time-style=full-iso
+  -g                         like -l, but do not list owner
+      --group-directories-first
+                             group directories before files;
+                               can be augmented with a --sort option, but                            any
+                               use of --sort=none (-U) disables grouping
+  -G, --no-group             in a long listing, don't print group names
+  -h, --human-readable       with -l and/or -s, print human readable size                           s
+                               (e.g., 1K 234M 2G)
+      --si                   likewise, but use powers of 1000 not 1024
+  -H, --dereference-command-line
+                             follow symbolic links listed on the command                            line
+      --dereference-command-line-symlink-to-dir
+                             follow each command line symbolic link
+                               that points to a directory
+      --hide=PATTERN         do not list implied entries matching shell P                           ATTERN
+                               (overridden by -a or -A)
+      --indicator-style=WORD  append indicator with style WORD to entry n                           ames:
+                               none (default), slash (-p),
+                               file-type (--file-type), classify (-F)
+  -i, --inode                print the index number of each file
+  -I, --ignore=PATTERN       do not list implied entries matching shell P                           ATTERN
+  -k, --kibibytes            default to 1024-byte blocks for disk usage
+  -l                         use a long listing format
+  -L, --dereference          when showing file information for a symbolic
+                               link, show information for the file the li                           nk
+                               references rather than for the link itself
+  -m                         fill width with a comma separated list of en                           tries
+  -n, --numeric-uid-gid      like -l, but list numeric user and group IDs
+  -N, --literal              print raw entry names (don't treat e.g. cont                           rol
+                               characters specially)
+  -o                         like -l, but do not list group information
+  -p, --indicator-style=slash
+                             append / indicator to directories
+  -q, --hide-control-chars   print ? instead of nongraphic characters
+      --show-control-chars   show nongraphic characters as-is (the defaul                           t,
+                               unless program is 'ls' and output is a ter                           minal)
+  -Q, --quote-name           enclose entry names in double quotes
+      --quoting-style=WORD   use quoting style WORD for entry names:
+                               literal, locale, shell, shell-always,
+                               shell-escape, shell-escape-always, c, esca                           pe
+  -r, --reverse              reverse order while sorting
+  -R, --recursive            list subdirectories recursively
+  -s, --size                 print the allocated size of each file, in bl                           ocks
+  -S                         sort by file size, largest first
+      --sort=WORD            sort by WORD instead of name: none (-U), siz                           e (-S),
+                               time (-t), version (-v), extension (-X)
+      --time=WORD            with -l, show time as WORD instead of defaul                           t
+                               modification time: atime or access or use                            (-u);
+                               ctime or status (-c); also use specified t                           ime
+                               as sort key if --sort=time (newest first)
+      --time-style=STYLE     with -l, show times using style STYLE:
+                               full-iso, long-iso, iso, locale, or +FORMA                           T;
+                               FORMAT is interpreted like in 'date'; if F                           ORMAT
+                               is FORMAT1<newline>FORMAT2, then FORMAT1 a                           pplies
+                               to non-recent files and FORMAT2 to recent                            files;
+                               if STYLE is prefixed with 'posix-', STYLE
+                               takes effect only outside the POSIX locale
+  -t                         sort by modification time, newest first
+  -T, --tabsize=COLS         assume tab stops at each COLS instead of 8
+  -u                         with -lt: sort by, and show, access time;
+                               with -l: show access time and sort by name                           ;
+                               otherwise: sort by access time, newest fir                           st
+  -U                         do not sort; list entries in directory order
+  -v                         natural sort of (version) numbers within tex                           t
+  -w, --width=COLS           set output width to COLS.  0 means no limit
+  -x                         list entries by lines instead of by columns
+  -X                         sort alphabetically by entry extension
+  -Z, --context              print any security context of each file
+  -1                         list one file per line.  Avoid '\n' with -q                            or -b
+      --append-exe           append .exe if cygwin magic was needed
+      --help     display this help and exit
+      --version  output version information and exit
+
+The SIZE argument is an integer and optional unit (example: 10K is 10*102                           4).
+Units are K,M,G,T,P,E,Z,Y (powers of 1024) or KB,MB,... (powers of 1000).
+
+Using color to distinguish file types is disabled both by default and
+with --color=never.  With --color=auto, ls emits color codes only when
+standard output is connected to a terminal.  The LS_COLORS environment
+variable can change the settings.  Use the dircolors command to set it.
+
+Exit status:
+ 0  if OK,
+ 1  if minor problems (e.g., cannot access subdirectory),
+ 2  if serious trouble (e.g., cannot access command-line argument).
+
+GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
+Report ls translation bugs to <http://translationproject.org/team/>
+Full documentation at: <http://www.gnu.org/software/coreutils/ls>
+or available locally via: info '(coreutils) ls invocation'
+
+User@WIN-F15OM6UO87B MINGW64 ~/Music
+$ cd ..
+
+User@WIN-F15OM6UO87B MINGW64 ~
+$ mkdir -m755 test
+
+User@WIN-F15OM6UO87B MINGW64 ~
+$ cd test
+
+User@WIN-F15OM6UO87B MINGW64 ~/test
+$ cd ..
+
+User@WIN-F15OM6UO87B MINGW64 ~
+$ ls -la
+total 3202
+drwxr-xr-x 1 User 197121       0 Dec 12 19:41 ./
+drwxr-xr-x 1 User 197121       0 Nov  6 01:35 ../
+drwxr-xr-x 1 User 197121       0 Nov  6 01:35 AppData/
+lrwxrwxrwx 1 User 197121      29 Nov  6 01:35 'Application Data' -> /c/Us                           ers/User/AppData/Roaming/
+drwxr-xr-x 1 User 197121       0 Nov  6 01:36 Contacts/
+lrwxrwxrwx 1 User 197121      55 Nov  6 01:35 Cookies -> /c/Users/User/Ap                           pData/Roaming/Microsoft/Windows/Cookies/
+drwxr-xr-x 1 User 197121       0 Dec 11 16:20 Desktop/
+drwxr-xr-x 1 User 197121       0 Dec  1 21:25 Documents/
+drwxr-xr-x 1 User 197121       0 Dec 12 19:21 Downloads/
+drwxr-xr-x 1 User 197121       0 Nov  8 15:40 Favorites/
+drwxr-xr-x 1 User 197121       0 Nov  6 01:36 Links/
+lrwxrwxrwx 1 User 197121      27 Nov  6 01:35 'Local Settings' -> /c/User                           s/User/AppData/Local/
+drwxr-xr-x 1 User 197121       0 Nov  6 01:36 Music/
+-rw-r--r-- 1 User 197121 1572864 Dec 12 19:46 NTUSER.DAT
+-rw-r--r-- 1 User 197121   65536 Nov  6 02:00 NTUSER.DAT{016888bd-6c6f-11                           de-8d1d-001e0bcde3ec}.TM.blf
+-rw-r--r-- 1 User 197121  524288 Nov  6 02:00 NTUSER.DAT{016888bd-6c6f-11                           de-8d1d-001e0bcde3ec}.TMContainer00000000000000000001.regtrans-ms
+-rw-r--r-- 1 User 197121  524288 Nov  6 02:00 NTUSER.DAT{016888bd-6c6f-11                           de-8d1d-001e0bcde3ec}.TMContainer00000000000000000002.regtrans-ms
+lrwxrwxrwx 1 User 197121      65 Nov  6 01:35 NetHood -> '/c/Users/User/A                           ppData/Roaming/Microsoft/Windows/Network Shortcuts'/
+drwxr-xr-x 1 User 197121       0 Nov  6 01:36 Pictures/
+lrwxrwxrwx 1 User 197121      65 Nov  6 01:35 PrintHood -> '/c/Users/User                           /AppData/Roaming/Microsoft/Windows/Printer Shortcuts'/
+lrwxrwxrwx 1 User 197121      54 Nov  6 01:35 Recent -> /c/Users/User/App                           Data/Roaming/Microsoft/Windows/Recent/
+drwxr-xr-x 1 User 197121       0 Nov  6 01:36 'Saved Games'/
+drwxr-xr-x 1 User 197121       0 Nov  6 01:36 Searches/
+lrwxrwxrwx 1 User 197121      54 Nov  6 01:35 SendTo -> /c/Users/User/App                           Data/Roaming/Microsoft/Windows/SendTo/
+drwxr-xr-x 1 User 197121       0 Nov 24 09:07 Tracing/
+drwxr-xr-x 1 User 197121       0 Nov  6 01:36 Videos/
+-rw-r--r-- 1 User 197121  262144 Dec 12 19:46 ntuser.dat.LOG1
+-rw-r--r-- 1 User 197121       0 Nov  6 01:35 ntuser.dat.LOG2
+-rw-r--r-- 1 User 197121      20 Nov  6 01:35 ntuser.ini
+drwxr-xr-x 1 User 197121       0 Dec 12 19:41 test/
+lrwxrwxrwx 1 User 197121      58 Nov  6 01:35 ''$'\320\223\320\273\320\26                           0\320\262\320\275\320\276\320\265'' '$'\320\274\320\265\320\275\321\216'                            -> '/c/Users/User/AppData/Roaming/Microsoft/Windows/Start Menu'/
+-rwxr-xr-x 1 User 197121     359 Nov 29 00:25 ''$'\320\232\320\276\320\27                           4\320\277\321\214\321\216\321\202\320\265\321\200'' - '$'\320\257\321\200                           \320\273\321\213\320\272''.lnk'*
+lrwxrwxrwx 1 User 197121      23 Nov  6 01:35 ''$'\320\234\320\276\320\27                           0'' '$'\320\264\320\276\320\272\321\203\320\274\320\265\320\275\321\202\3                           21\213' -> /c/Users/User/Documents/
+lrwxrwxrwx 1 User 197121      57 Nov  6 01:35 ''$'\320\250\320\260\320\26                           1\320\273\320\276\320\275\321\213' -> /c/Users/User/AppData/Roaming/Micro                           soft/Windows/Templates/
+
+User@WIN-F15OM6UO87B MINGW64 ~
+$ cd test
+
+User@WIN-F15OM6UO87B MINGW64 ~/test
+$ git init
+Initialized empty Git repository in C:/Users/User/test/.git/
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path                           ]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing                            one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local                            branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ ls -la
+total 12
+drwxr-xr-x 1 User 197121 0 Dec 12 19:52 ./
+drwxr-xr-x 1 User 197121 0 Dec 12 19:41 ../
+drwxr-xr-x 1 User 197121 0 Dec 12 19:52 .git/
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git status
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ vim
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ cd ..
+
+User@WIN-F15OM6UO87B MINGW64 ~
+$ ls .ba*
+ls: cannot access '.ba*': No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~
+$
+
+User@WIN-F15OM6UO87B MINGW64 ~
+$ cd /
+
+User@WIN-F15OM6UO87B MINGW64 /
+$ cd -
+/c/Users/User
+
+User@WIN-F15OM6UO87B MINGW64 ~
+$ cd test
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ cp /
+LICENSE.txt        etc/               tmp/
+ReleaseNotes.html  git-bash.exe       unins000.dat
+bin/               git-cmd.exe        unins000.exe
+cmd/               mingw64/           unins000.msg
+dev/               proc/              usr/
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ cp /
+LICENSE.txt        etc/               tmp/
+ReleaseNotes.html  git-bash.exe       unins000.dat
+bin/               git-cmd.exe        unins000.exe
+cmd/               mingw64/           unins000.msg
+dev/               proc/              usr/
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ cd C:.git/
+HEAD         description  info/        refs/
+config       hooks/       objects/
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ cd C:
+
+User@WIN-F15OM6UO87B MINGW64 /c
+$ ls
+'$RECYCLE.BIN'/            'Program Files'/              Windows/
+Activator/                 'Program Files (x86)'/        hiberfil.sys
+'Documents and Settings'@  ProgramData/                  pagefile.sys
+Intel/                     'System Volume Information'/
+OpenServer/                Users/
+
+User@WIN-F15OM6UO87B MINGW64 /c
+$ cd OpenServer/domains/Domashka/
+
+User@WIN-F15OM6UO87B MINGW64 /c/OpenServer/domains/Domashka
+$ ls
+'Choose your mark.php'  'My mark(if-else).php'  Ruberoid.php
+FizzBuzzReady.php       'My mark(switch).php'
+
+User@WIN-F15OM6UO87B MINGW64 /c/OpenServer/domains/Domashka
+$ cp * ~/test/
+
+User@WIN-F15OM6UO87B MINGW64 /c/OpenServer/domains/Domashka
+$ cd -
+/c
+
+User@WIN-F15OM6UO87B MINGW64 /c
+$ cd ~/test/
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ ls
+'Choose your mark.php'  'My mark(if-else).php'  Ruberoid.php
+FizzBuzzReady.php       'My mark(switch).php'
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Choose your mark.php
+        FizzBuzzReady.php
+        My mark(if-else).php
+        My mark(switch).php
+        Ruberoid.php
+
+nothing added to commit but untracked files present (use "git add" to tra                           ck)
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git add Choose\ your\ mark.php
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   Choose your mark.php
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        FizzBuzzReady.php
+        My mark(if-else).php
+        My mark(switch).php
+        Ruberoid.php
+
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git add FizzBuzzReady.php
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git add My\ mark\(*
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   Choose your mark.php
+        new file:   FizzBuzzReady.php
+        new file:   My mark(if-else).php
+        new file:   My mark(switch).php
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Ruberoid.php
+
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git add Ruberoid.php
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git status^C
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   Choose your mark.php
+        new file:   FizzBuzzReady.php
+        new file:   My mark(if-else).php
+        new file:   My mark(switch).php
+        new file:   Ruberoid.php
+
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git commit
+Aborting commit due to empty commit message.
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git commit -m"my first commit"
+[master (root-commit) 3b747b8] my first commit
+ Committer: ????»N?·?????°N?µ?»N <????»N?·?????°N?µ?»N>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 5 files changed, 110 insertions(+)
+ create mode 100644 Choose your mark.php
+ create mode 100644 FizzBuzzReady.php
+ create mode 100644 My mark(if-else).php
+ create mode 100644 My mark(switch).php
+ create mode 100644 Ruberoid.php
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$  git commit --amend --reset-author
+[master 09bafc2] my first commit
+ Committer: ????»N?·?????°N?µ?»N <????»N?·?????°N?µ?»N>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 5 files changed, 110 insertions(+)
+ create mode 100644 Choose your mark.php
+ create mode 100644 FizzBuzzReady.php
+ create mode 100644 My mark(if-else).php
+ create mode 100644 My mark(switch).php
+ create mode 100644 Ruberoid.php
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$  git commit --amend --reset-author
+[master e4823d8] my first commit
+ Committer: ????»N?·?????°N?µ?»N <????»N?·?????°N?µ?»N>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 5 files changed, 110 insertions(+)
+ create mode 100644 Choose your mark.php
+ create mode 100644 FizzBuzzReady.php
+ create mode 100644 My mark(if-else).php
+ create mode 100644 My mark(switch).php
+ create mode 100644 Ruberoid.php
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$  git config --global --edit
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git commit -m"my first commit"
+On branch master
+nothing to commit, working tree clean
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git log
+commit e4823d83d3f511936dd1dcd34566dd2e691e579f
+Author: <D0><9F><D0><BE><D0><BB><D1><8C><D0><B7><D0><BE><D0><B2><D0><B0><D1><82><D0><B5><D0><BB><D1><8C> <<D0><9F><D0><BE><D0><BB><D1><8C><D0><B7><D0><BE><D0><B2><D0><B0><D1><82><D0><B5><D0><BB><D1>
+<8C>>
+Date:   Mon Dec 12 20:50:58 2016 +0200
+
+    my first commit
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ ls
+'Choose your mark.php'  'My mark(if-else).php'  Ruberoid.php
+FizzBuzzReady.php       'My mark(switch).php'
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ vim FizzBuzzReady.php
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   FizzBuzzReady.php
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git diff
+diff --git a/FizzBuzzReady.php b/FizzBuzzReady.php
+index 3b029f5..bda5f61 100644
+--- a/FizzBuzzReady.php
++++ b/FizzBuzzReady.php
+@@ -11,7 +11,7 @@ $Buzz = fgets($handle);
+
+
+
+-$i = 1;
++$i = 0;
+ while ($i < $number) {
+ $i=$i+1;
+
+@@ -26,4 +26,4 @@ $i=$i+1;
+
+     }
+     echo "\n";
+-}
+\ No newline at end of file
++}
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git add FizzBuzzReady.php
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   FizzBuzzReady.php
+
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git commit -m"FizzBuzz updated"
+[master 9151dc3] FizzBuzz updated
+ Committer: ????»N?·?????°N?µ?»N <????»N?·?????°N?µ?»N>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git config --global user.name "Nikita Plashev"
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git config --global user.email you@example.com
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git log
+commit 9151dc3549b749c106369c36def469234924301c
+Author: <D0><9F><D0><BE><D0><BB><D1><8C><D0><B7><D0><BE><D0><B2><D0><B0><D1><82><D0><B5><D0><BB><D1><8C> <<D0><9F><D0><BE><D0><BB><D1><8C><D0><B7><D0><BE><D0><B2><D0><B0><D1><82><D0><B5><D0><BB><D1>
+<8C>>
+Date:   Mon Dec 12 21:07:36 2016 +0200
+
+    FizzBuzz updated
+
+commit e4823d83d3f511936dd1dcd34566dd2e691e579f
+Author: <D0><9F><D0><BE><D0><BB><D1><8C><D0><B7><D0><BE><D0><B2><D0><B0><D1><82><D0><B5><D0><BB><D1><8C> <<D0><9F><D0><BE><D0><BB><D1><8C><D0><B7><D0><BE><D0><B2><D0><B0><D1><82><D0><B5><D0><BB><D1>
+<8C>>
+Date:   Mon Dec 12 20:50:58 2016 +0200
+
+    my first commit
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ vim FizzBuzzReady.php
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   FizzBuzzReady.php
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git diff
+diff --git a/FizzBuzzReady.php b/FizzBuzzReady.php
+index bda5f61..26abb67 100644
+--- a/FizzBuzzReady.php
++++ b/FizzBuzzReady.php
+@@ -16,11 +16,11 @@ while ($i < $number) {
+ $i=$i+1;
+
+  if(($i % $Fizz) == 0 && ($i % $Buzz) == 0){
+-    echo FB;
++    echo "FB";
+   }elseif(($i % $Buzz) == 0){
+-    echo B;
++    echo "B";
+   }elseif(($i % $Fizz) == 0){
+-    echo F;
++    echo "F";
+   }else{
+     echo $i;
+
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git commit -m"FizzBuzz updated"
+On branch master
+Changes not staged for commit:
+        modified:   FizzBuzzReady.php
+
+no changes added to commit
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git add FizzBuzzReady.php
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git commit -m"FizzBuzz updated"
+[master 4d1a167] FizzBuzz updated
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git log
+commit 4d1a1675bdf0aa6f59fa824fb0315c2d41c34602
+Author: Nikita Plashev <you@example.com>
+Date:   Mon Dec 12 21:14:08 2016 +0200
+
+    FizzBuzz updated
+
+commit 9151dc3549b749c106369c36def469234924301c
+Author: <D0><9F><D0><BE><D0><BB><D1><8C><D0><B7><D0><BE><D0><B2><D0><B0><D1><82><D0><B5><D0><BB><D1><8C> <<D0><9F><D0><BE><D0><BB><D1><8C><D0><B7><D0><BE><D0><B2><D0><B0><D1><82><D0><B5><D0><BB><D1>
+<8C>>
+Date:   Mon Dec 12 21:07:36 2016 +0200
+
+    FizzBuzz updated
+
+commit e4823d83d3f511936dd1dcd34566dd2e691e579f
+Author: <D0><9F><D0><BE><D0><BB><D1><8C><D0><B7><D0><BE><D0><B2><D0><B0><D1><82><D0><B5><D0><BB><D1><8C> <<D0><9F><D0><BE><D0><BB><D1><8C><D0><B7><D0><BE><D0><B2><D0><B0><D1><82><D0><B5><D0><BB><D1>
+<8C>>
+Date:   Mon Dec 12 20:50:58 2016 +0200
+
+    my first commit
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/User/.ssh/id_rsa):
+Created directory '/c/Users/User/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/User/.ssh/id_rsa.
+Your public key has been saved in /c/Users/User/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:77XUXckynBPFL7yOZ/AR0xN4BLsHtvH4LsinX18sEew User@WIN-F15OM6UO87B
+The key's randomart image is:
++---[RSA 2048]----+
+|             .=o |
+|             oo+ |
+|             B+.o|
+|            o./o+|
+|        S    XEXo|
+|         .  ..O+.|
+|          o +=o++|
+|         . =.+B.o|
+|          ..=+...|
++----[SHA256]-----+
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ cat ~/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDLaqtYB4f72EVNyDHl09lS28ypLRTTH6LkIIc6bwj2+Tgx5pwb/B08ITkC6Ih208CC4RfWGwArriP/qr0J5fYYjBZFIiGybGhRQYG4ycw3Cd4CJ4jm/fg+XE1Zvar7SmcXKuexUZRqSmlCOmdNh71zYpF7l3nB7vC7nj6PaLPv7Lu4pwO1lLWB52DezFUpsz3tKkGpV1AwRewsGIOIwgdS/d0VenjEcMpPiipyXYw1CZ0QVb/+g4LWq9ydXiK/bXfUrfZNck9YbJ+NV9rvuBmlw6gZ+qp/USZlaEeMYurqS/X5nJO9nkRnFN5o/wL8aHdEPsYNMMheQ+aAAmOpUPzb User@WIN-F15OM6UO87B
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git remote -v
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git remote add origin git@github.com:NikitaPlashev/Home-work.git
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git remote -v
+origin  git@github.com:NikitaPlashev/Home-work.git (fetch)
+origin  git@github.com:NikitaPlashev/Home-work.git (push)
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git pull
+The authenticity of host 'github.com (192.30.253.112)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,192.30.253.112' (RSA) to the list of known hosts.
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git branch --set-upstream-to=origin master
+error: the requested upstream branch 'origin' does not exist
+hint:
+hint: If you are planning on basing your work on an upstream
+hint: branch that already exists at the remote, you may need to
+hint: run "git fetch" to retrieve it.
+hint:
+hint: If you are planning to push out a new local branch that
+hint: will track its remote counterpart, you may want to use
+hint: "git push -u" to set the upstream config as you push.
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git branch --set-upstream-to=origin/master master
+error: the requested upstream branch 'origin/master' does not exist
+hint:
+hint: If you are planning on basing your work on an upstream
+hint: branch that already exists at the remote, you may need to
+hint: run "git fetch" to retrieve it.
+hint:
+hint: If you are planning to push out a new local branch that
+hint: will track its remote counterpart, you may want to use
+hint: "git push -u" to set the upstream config as you push.
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git branch --set-upstream-to=origin/<branch> master
+bash: branch: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git branch --set-upstream-to=origin/<master> master
+bash: master: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git branch --set-upstream-to=origin master
+error: the requested upstream branch 'origin' does not exist
+hint:
+hint: If you are planning on basing your work on an upstream
+hint: branch that already exists at the remote, you may need to
+hint: run "git fetch" to retrieve it.
+hint:
+hint: If you are planning to push out a new local branch that
+hint: will track its remote counterpart, you may want to use
+hint: "git push -u" to set the upstream config as you push.
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git pull
+Warning: Permanently added the RSA host key for IP address '192.30.253.113' to the list of known hosts.
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git pull --set-upstream origin master
+error: unknown option `set-upstream'
+usage: git pull [<options>] [<repository> [<refspec>...]]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+
+Options related to merging
+    -r, --rebase[=<false|true|preserve|interactive>]
+                          incorporate changes by rebasing rather than merging
+    -n                    do not show a diffstat at the end of the merge
+    --stat                show a diffstat at the end of the merge
+    --log[=<n>]           add (at most <n>) entries from shortlog to merge commit message
+    --squash              create a single commit instead of doing a merge
+    --commit              perform a commit if the merge succeeds (default)
+    --edit                edit message before committing
+    --ff                  allow fast-forward
+    --ff-only             abort if fast-forward is not possible
+    --verify-signatures   verify that the named commit has a valid GPG signature
+    --autostash           automatically stash/stash pop before and after rebase
+    -s, --strategy <strategy>
+                          merge strategy to use
+    -X, --strategy-option <option=value>
+                          option for selected merge strategy
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+    --allow-unrelated-histories
+                          allow merging unrelated histories
+
+Options related to fetching
+    --all                 fetch from all remotes
+    -a, --append          append to .git/FETCH_HEAD instead of overwriting
+    --upload-pack <path>  path to upload pack on remote end
+    -f, --force           force overwrite of local branch
+    -t, --tags            fetch all tags and associated objects
+    -p, --prune           prune remote-tracking branches no longer on remote
+    --recurse-submodules[=<on-demand>]
+                          control recursive fetching of submodules
+    -j, --jobs[=<n>]      number of submodules pulled in parallel
+    --dry-run             dry run
+    -k, --keep            keep downloaded pack
+    --depth <depth>       deepen history of shallow clone
+    --unshallow           convert to a complete repository
+    --update-shallow      accept refs that update .git/shallow
+    --refmap <refmap>     specify fetch refmap
+
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git push --set-upstream origin master
+Counting objects: 13, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (13/13), 1.82 KiB | 0 bytes/s, done.
+Total 13 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), done.
+To github.com:NikitaPlashev/Home-work.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git pull
+Already up-to-date.
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ $ lgit branch --set-upstream-to=origin/<br'Application Data'@ch --set-upstream-to=origin/<branch> Contacts/ branch --set-upstream-to=origin/<branch> master
+Cookies@
+Desktop/
+Documents/
+Downloads/
+Favorites/
+Links/
+'Local Settings'@
+Music/
+NTUSER.DAT
+NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TM.blf
+NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMConta                                            iner00000000000000000001.regtrans-ms
+NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMConta                                            iner00000000000000000002.regtrans-ms
+NetHood@
+Pictures/
+PrintHood@
+Recent@
+'Saved Games'/
+Searches/
+SendTo@
+Tracing/
+Videos/
+ntuser.dat.LOG1
+ntuser.dat.LOG2
+ntuser.ini
+''$'\320\223\320\273\320\260\320\262\320\275\320\276\320                                            \265'' '$'\320\274\320\265\320\275\321\216'@
+''$'\320\232\320\276\320\274\320\277\321\214\321\216\321                                            \202\320\265\321\200'' - '$'\320\257\321\200\320\273\321                                            \213\320\272''.lnk'*
+''$'\320\234\320\276\320\270'' '$'\320\264\320\276\320\2                                            72\321\203\320\274\320\265\320\275\321\202\321\213'@
+''$'\320\250\320\260\320\261\320\273\320\276\320\275\321                                            \213'@
+
+User@WIN-F15OM6UO87B MINGW64 ~
+$ cd Music/                                               $ lsgit branch --set-upstream-to=origin/<branch> mastergit branch --set-upstream-to=origin/<branch> m
+bash: branch: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ AppData/
+bash: AppData/: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ 'Application Data'@
+bash: Application Data@: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ Contacts/
+bash: Contacts/: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ Cookies@
+bash: Cookies@: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ Desktop/
+bash: Desktop/: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ Documents/
+bash: Documents/: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ Downloads/
+bash: Downloads/: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ Favorites/
+bash: Favorites/: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ Links/
+bash: Links/: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ 'Local Settings'@
+bash: Local Settings@: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ Music/
+bash: Music/: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ NTUSER.DAT
+bash: NTUSER.DAT: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TM.blf
+bash: NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TM.blf: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMConta                                            iner00000000000000000001.regtrans-ms
+bash: NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMConta: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMConta                                            iner00000000000000000002.regtrans-ms
+bash: NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMConta: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ NetHood@
+bash: NetHood@: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ Pictures/
+bash: Pictures/: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ PrintHood@
+bash: PrintHood@: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ Recent@
+bash: Recent@: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ 'Saved Games'/
+bash: Saved Games/: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ Searches/
+bash: Searches/: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ SendTo@
+bash: SendTo@: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ Tracing/
+bash: Tracing/: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ Videos/
+bash: Videos/: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ ntuser.dat.LOG1
+bash: ntuser.dat.LOG1: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ ntuser.dat.LOG2
+bash: ntuser.dat.LOG2: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ ntuser.ini
+bash: ntuser.ini: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ ''$'\320\223\320\273\320\260\320\262\320\275\320\276\320                                            \265'' '$'\320\274\320\265\320\275\321\216'@
+bash: $'?\223?»?°???????                                            µ ???µ??N\216@': command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ ''$'\320\232\320\276\320\274\320\277\321\214\321\216\321                                            \202\320\265\321\200'' - '$'\320\257\321\200\320\273\321                                            \213\320\272''.lnk'*
+bash: $'?\232??????N\214N\216N                                            \202?µN\200 - ??N\200?»N                                            \213??.lnk*': command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ ''$'\320\234\320\276\320\270'' '$'\320\264\320\276\320\2                                            72\321\203\320\274\320\265\320\275\321\202\321\213'@
+bash: $'?\234???? ?????\002                                            72N\203???µ??N\202N\213@': command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ ''$'\320\250\320\260\320\261\320\273\320\276\320\275\321                                            \213'@
+bash: $'???°?±?»????N                                            \213@': command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ User@WIN-F15OM6UO87B MINGW64 ~
+bash: User@WIN-F15OM6UO87B: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ $ cd Music/
+bash: $: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$
+$ ls
+AppData/
+'Application Data'@
+Contacts/
+Cookies@
+Desktop/
+Documents/
+Downloads/
+Favorites/
+Links/
+'Local Settings'@
+Music/
+NTUSER.DAT
+NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TM.blf
+NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMConta                                            iner00000000000000000001.regtrans-ms
+NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMConta                                            iner00000000000000000002.regtrans-ms
+NetHood@
+Pictures/
+PrintHood@
+Recent@
+'Saved Games'/
+Searches/
+SendTo@
+Tracing/
+Videos/
+ntuser.dat.LOG1
+ntuser.dat.LOG2
+ntuser.ini
+''$'\320\223\320\273\320\260\320\262\320\275\320\276\320                                            \265'' '$'\320\274\320\265\320\275\321\216'@
+''$'\320\232\320\276\320\274\320\277\321\214\321\216\321                                            \202\320\265\321\200'' - '$'\320\257\321\200\320\273\321                                            \213\320\272''.lnk'*
+''$'\320\234\320\276\320\270'' '$'\320\264\320\276\320\2                                            72\321\203\320\274\320\265\320\275\321\202\321\213'@
+''$'\320\250\320\260\320\261\320\273\320\276\320\275\321                                            \213'@
+
+User@WIN-F15OM6UO87B MINGW64 ~
+$ cd Music/
+
+User@WIN-F15OM6UO87B MINGW64 ~/Music
+$ ls
+desktop.ini
+
+User@WIN-F15OM6UO87B MINGW64 ~/Music
+$ ls -la
+total 9
+drwxr-xr-x 1 User 197121   0 Nov  6 01:36 ./
+drwxr-xr-x 1 User 197121   0 Nov 29 00:25 ../
+-rw-r--r-- 1 User 197121 504 Nov  6 01:36 desktop.ini
+
+User@WIN-F15OM6UO87B MINGW64 ~/Music
+$ ls -lat
+total 9
+drwxr-xr-x 1 User 197121   0 Nov 29 00:25 ../
+drwxr-xr-x 1 User 197121   0 Nov  6 01:36 ./
+-rw-r--r-- 1 User 197121 504 Nov  6 01:36 desktop.ini
+
+User@WIN-F15OM6UO87B MINGW64 ~/Music
+$ man ls
+bash: man: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/Music
+$ help ls
+bash: help: no help topics match `ls'.  Try `help help' or `man -k ls' or                            `info ls'.
+
+User@WIN-F15OM6UO87B MINGW64 ~/Music
+$ ls --help
+Usage: ls [OPTION]... [FILE]...
+List information about the FILEs (the current directory by default).
+Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -a, --all                  do not ignore entries starting with .
+  -A, --almost-all           do not list implied . and ..
+      --author               with -l, print the author of each file
+  -b, --escape               print C-style escapes for nongraphic charact                           ers
+      --block-size=SIZE      scale sizes by SIZE before printing them; e.                           g.,
+                               '--block-size=M' prints sizes in units of
+                               1,048,576 bytes; see SIZE format below
+  -B, --ignore-backups       do not list implied entries ending with ~
+  -c                         with -lt: sort by, and show, ctime (time of                            last
+                               modification of file status information);
+                               with -l: show ctime and sort by name;
+                               otherwise: sort by ctime, newest first
+  -C                         list entries by columns
+      --color[=WHEN]         colorize the output; WHEN can be 'always' (d                           efault
+                               if omitted), 'auto', or 'never'; more info                            below
+  -d, --directory            list directories themselves, not their conte                           nts
+  -D, --dired                generate output designed for Emacs' dired mo                           de
+  -f                         do not sort, enable -aU, disable -ls --color
+  -F, --classify             append indicator (one of */=>@|) to entries
+      --file-type            likewise, except do not append '*'
+      --format=WORD          across -x, commas -m, horizontal -x, long -l                           ,
+                               single-column -1, verbose -l, vertical -C
+      --full-time            like -l --time-style=full-iso
+  -g                         like -l, but do not list owner
+      --group-directories-first
+                             group directories before files;
+                               can be augmented with a --sort option, but                            any
+                               use of --sort=none (-U) disables grouping
+  -G, --no-group             in a long listing, don't print group names
+  -h, --human-readable       with -l and/or -s, print human readable size                           s
+                               (e.g., 1K 234M 2G)
+      --si                   likewise, but use powers of 1000 not 1024
+  -H, --dereference-command-line
+                             follow symbolic links listed on the command                            line
+      --dereference-command-line-symlink-to-dir
+                             follow each command line symbolic link
+                               that points to a directory
+      --hide=PATTERN         do not list implied entries matching shell P                           ATTERN
+                               (overridden by -a or -A)
+      --indicator-style=WORD  append indicator with style WORD to entry n                           ames:
+                               none (default), slash (-p),
+                               file-type (--file-type), classify (-F)
+  -i, --inode                print the index number of each file
+  -I, --ignore=PATTERN       do not list implied entries matching shell P                           ATTERN
+  -k, --kibibytes            default to 1024-byte blocks for disk usage
+  -l                         use a long listing format
+  -L, --dereference          when showing file information for a symbolic
+                               link, show information for the file the li                           nk
+                               references rather than for the link itself
+  -m                         fill width with a comma separated list of en                           tries
+  -n, --numeric-uid-gid      like -l, but list numeric user and group IDs
+  -N, --literal              print raw entry names (don't treat e.g. cont                           rol
+                               characters specially)
+  -o                         like -l, but do not list group information
+  -p, --indicator-style=slash
+                             append / indicator to directories
+  -q, --hide-control-chars   print ? instead of nongraphic characters
+      --show-control-chars   show nongraphic characters as-is (the defaul                           t,
+                               unless program is 'ls' and output is a ter                           minal)
+  -Q, --quote-name           enclose entry names in double quotes
+      --quoting-style=WORD   use quoting style WORD for entry names:
+                               literal, locale, shell, shell-always,
+                               shell-escape, shell-escape-always, c, esca                           pe
+  -r, --reverse              reverse order while sorting
+  -R, --recursive            list subdirectories recursively
+  -s, --size                 print the allocated size of each file, in bl                           ocks
+  -S                         sort by file size, largest first
+      --sort=WORD            sort by WORD instead of name: none (-U), siz                           e (-S),
+                               time (-t), version (-v), extension (-X)
+      --time=WORD            with -l, show time as WORD instead of defaul                           t
+                               modification time: atime or access or use                            (-u);
+                               ctime or status (-c); also use specified t                           ime
+                               as sort key if --sort=time (newest first)
+      --time-style=STYLE     with -l, show times using style STYLE:
+                               full-iso, long-iso, iso, locale, or +FORMA                           T;
+                               FORMAT is interpreted like in 'date'; if F                           ORMAT
+                               is FORMAT1<newline>FORMAT2, then FORMAT1 a                           pplies
+                               to non-recent files and FORMAT2 to recent                            files;
+                               if STYLE is prefixed with 'posix-', STYLE
+                               takes effect only outside the POSIX locale
+  -t                         sort by modification time, newest first
+  -T, --tabsize=COLS         assume tab stops at each COLS instead of 8
+  -u                         with -lt: sort by, and show, access time;
+                               with -l: show access time and sort by name                           ;
+                               otherwise: sort by access time, newest fir                           st
+  -U                         do not sort; list entries in directory order
+  -v                         natural sort of (version) numbers within tex                           t
+  -w, --width=COLS           set output width to COLS.  0 means no limit
+  -x                         list entries by lines instead of by columns
+  -X                         sort alphabetically by entry extension
+  -Z, --context              print any security context of each file
+  -1                         list one file per line.  Avoid '\n' with -q                            or -b
+      --append-exe           append .exe if cygwin magic was needed
+      --help     display this help and exit
+      --version  output version information and exit
+
+The SIZE argument is an integer and optional unit (example: 10K is 10*102                           4).
+Units are K,M,G,T,P,E,Z,Y (powers of 1024) or KB,MB,... (powers of 1000).
+
+Using color to distinguish file types is disabled both by default and
+with --color=never.  With --color=auto, ls emits color codes only when
+standard output is connected to a terminal.  The LS_COLORS environment
+variable can change the settings.  Use the dircolors command to set it.
+
+Exit status:
+ 0  if OK,
+ 1  if minor problems (e.g., cannot access subdirectory),
+ 2  if serious trouble (e.g., cannot access command-line argument).
+
+GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
+Report ls translation bugs to <http://translationproject.org/team/>
+Full documentation at: <http://www.gnu.org/software/coreutils/ls>
+or available locally via: info '(coreutils) ls invocation'
+
+User@WIN-F15OM6UO87B MINGW64 ~/Music
+$ cd ..
+
+User@WIN-F15OM6UO87B MINGW64 ~
+$ mkdir -m755 test
+
+User@WIN-F15OM6UO87B MINGW64 ~
+$ cd test
+
+User@WIN-F15OM6UO87B MINGW64 ~/test
+$ cd ..
+
+User@WIN-F15OM6UO87B MINGW64 ~
+$ ls -la
+total 3202
+drwxr-xr-x 1 User 197121       0 Dec 12 19:41 ./
+drwxr-xr-x 1 User 197121       0 Nov  6 01:35 ../
+drwxr-xr-x 1 User 197121       0 Nov  6 01:35 AppData/
+lrwxrwxrwx 1 User 197121      29 Nov  6 01:35 'Application Data' -> /c/Us                           ers/User/AppData/Roaming/
+drwxr-xr-x 1 User 197121       0 Nov  6 01:36 Contacts/
+lrwxrwxrwx 1 User 197121      55 Nov  6 01:35 Cookies -> /c/Users/User/Ap                           pData/Roaming/Microsoft/Windows/Cookies/
+drwxr-xr-x 1 User 197121       0 Dec 11 16:20 Desktop/
+drwxr-xr-x 1 User 197121       0 Dec  1 21:25 Documents/
+drwxr-xr-x 1 User 197121       0 Dec 12 19:21 Downloads/
+drwxr-xr-x 1 User 197121       0 Nov  8 15:40 Favorites/
+drwxr-xr-x 1 User 197121       0 Nov  6 01:36 Links/
+lrwxrwxrwx 1 User 197121      27 Nov  6 01:35 'Local Settings' -> /c/User                           s/User/AppData/Local/
+drwxr-xr-x 1 User 197121       0 Nov  6 01:36 Music/
+-rw-r--r-- 1 User 197121 1572864 Dec 12 19:46 NTUSER.DAT
+-rw-r--r-- 1 User 197121   65536 Nov  6 02:00 NTUSER.DAT{016888bd-6c6f-11                           de-8d1d-001e0bcde3ec}.TM.blf
+-rw-r--r-- 1 User 197121  524288 Nov  6 02:00 NTUSER.DAT{016888bd-6c6f-11                           de-8d1d-001e0bcde3ec}.TMContainer00000000000000000001.regtrans-ms
+-rw-r--r-- 1 User 197121  524288 Nov  6 02:00 NTUSER.DAT{016888bd-6c6f-11                           de-8d1d-001e0bcde3ec}.TMContainer00000000000000000002.regtrans-ms
+lrwxrwxrwx 1 User 197121      65 Nov  6 01:35 NetHood -> '/c/Users/User/A                           ppData/Roaming/Microsoft/Windows/Network Shortcuts'/
+drwxr-xr-x 1 User 197121       0 Nov  6 01:36 Pictures/
+lrwxrwxrwx 1 User 197121      65 Nov  6 01:35 PrintHood -> '/c/Users/User                           /AppData/Roaming/Microsoft/Windows/Printer Shortcuts'/
+lrwxrwxrwx 1 User 197121      54 Nov  6 01:35 Recent -> /c/Users/User/App                           Data/Roaming/Microsoft/Windows/Recent/
+drwxr-xr-x 1 User 197121       0 Nov  6 01:36 'Saved Games'/
+drwxr-xr-x 1 User 197121       0 Nov  6 01:36 Searches/
+lrwxrwxrwx 1 User 197121      54 Nov  6 01:35 SendTo -> /c/Users/User/App                           Data/Roaming/Microsoft/Windows/SendTo/
+drwxr-xr-x 1 User 197121       0 Nov 24 09:07 Tracing/
+drwxr-xr-x 1 User 197121       0 Nov  6 01:36 Videos/
+-rw-r--r-- 1 User 197121  262144 Dec 12 19:46 ntuser.dat.LOG1
+-rw-r--r-- 1 User 197121       0 Nov  6 01:35 ntuser.dat.LOG2
+-rw-r--r-- 1 User 197121      20 Nov  6 01:35 ntuser.ini
+drwxr-xr-x 1 User 197121       0 Dec 12 19:41 test/
+lrwxrwxrwx 1 User 197121      58 Nov  6 01:35 ''$'\320\223\320\273\320\26                           0\320\262\320\275\320\276\320\265'' '$'\320\274\320\265\320\275\321\216'                            -> '/c/Users/User/AppData/Roaming/Microsoft/Windows/Start Menu'/
+-rwxr-xr-x 1 User 197121     359 Nov 29 00:25 ''$'\320\232\320\276\320\27                           4\320\277\321\214\321\216\321\202\320\265\321\200'' - '$'\320\257\321\200                           \320\273\321\213\320\272''.lnk'*
+lrwxrwxrwx 1 User 197121      23 Nov  6 01:35 ''$'\320\234\320\276\320\27                           0'' '$'\320\264\320\276\320\272\321\203\320\274\320\265\320\275\321\202\3                           21\213' -> /c/Users/User/Documents/
+lrwxrwxrwx 1 User 197121      57 Nov  6 01:35 ''$'\320\250\320\260\320\26                           1\320\273\320\276\320\275\321\213' -> /c/Users/User/AppData/Roaming/Micro                           soft/Windows/Templates/
+
+User@WIN-F15OM6UO87B MINGW64 ~
+$ cd test
+
+User@WIN-F15OM6UO87B MINGW64 ~/test
+$ git init
+Initialized empty Git repository in C:/Users/User/test/.git/
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path                           ]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing                            one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local                            branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ ls -la
+total 12
+drwxr-xr-x 1 User 197121 0 Dec 12 19:52 ./
+drwxr-xr-x 1 User 197121 0 Dec 12 19:41 ../
+drwxr-xr-x 1 User 197121 0 Dec 12 19:52 .git/
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git status
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ vim
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ cd ..
+
+User@WIN-F15OM6UO87B MINGW64 ~
+$ ls .ba*
+ls: cannot access '.ba*': No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~
+$
+
+User@WIN-F15OM6UO87B MINGW64 ~
+$ cd /
+
+User@WIN-F15OM6UO87B MINGW64 /
+$ cd -
+/c/Users/User
+
+User@WIN-F15OM6UO87B MINGW64 ~
+$ cd test
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ cp /
+LICENSE.txt        etc/               tmp/
+ReleaseNotes.html  git-bash.exe       unins000.dat
+bin/               git-cmd.exe        unins000.exe
+cmd/               mingw64/           unins000.msg
+dev/               proc/              usr/
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ cp /
+LICENSE.txt        etc/               tmp/
+ReleaseNotes.html  git-bash.exe       unins000.dat
+bin/               git-cmd.exe        unins000.exe
+cmd/               mingw64/           unins000.msg
+dev/               proc/              usr/
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ cd C:.git/
+HEAD         description  info/        refs/
+config       hooks/       objects/
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ cd C:
+
+User@WIN-F15OM6UO87B MINGW64 /c
+$ ls
+'$RECYCLE.BIN'/            'Program Files'/              Windows/
+Activator/                 'Program Files (x86)'/        hiberfil.sys
+'Documents and Settings'@  ProgramData/                  pagefile.sys
+Intel/                     'System Volume Information'/
+OpenServer/                Users/
+
+User@WIN-F15OM6UO87B MINGW64 /c
+$ cd OpenServer/domains/Domashka/
+
+User@WIN-F15OM6UO87B MINGW64 /c/OpenServer/domains/Domashka
+$ ls
+'Choose your mark.php'  'My mark(if-else).php'  Ruberoid.php
+FizzBuzzReady.php       'My mark(switch).php'
+
+User@WIN-F15OM6UO87B MINGW64 /c/OpenServer/domains/Domashka
+$ cp * ~/test/
+
+User@WIN-F15OM6UO87B MINGW64 /c/OpenServer/domains/Domashka
+$ cd -
+/c
+
+User@WIN-F15OM6UO87B MINGW64 /c
+$ cd ~/test/
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ ls
+'Choose your mark.php'  'My mark(if-else).php'  Ruberoid.php
+FizzBuzzReady.php       'My mark(switch).php'
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Choose your mark.php
+        FizzBuzzReady.php
+        My mark(if-else).php
+        My mark(switch).php
+        Ruberoid.php
+
+nothing added to commit but untracked files present (use "git add" to tra                           ck)
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git add Choose\ your\ mark.php
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   Choose your mark.php
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        FizzBuzzReady.php
+        My mark(if-else).php
+        My mark(switch).php
+        Ruberoid.php
+
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git add FizzBuzzReady.php
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git add My\ mark\(*
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   Choose your mark.php
+        new file:   FizzBuzzReady.php
+        new file:   My mark(if-else).php
+        new file:   My mark(switch).php
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Ruberoid.php
+
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git add Ruberoid.php
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git status^C
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   Choose your mark.php
+        new file:   FizzBuzzReady.php
+        new file:   My mark(if-else).php
+        new file:   My mark(switch).php
+        new file:   Ruberoid.php
+
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git commit
+Aborting commit due to empty commit message.
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git commit -m"my first commit"
+[master (root-commit) 3b747b8] my first commit
+ Committer: ????»N?·?????°N?µ?»N <????»N?·?????°N?µ?»N>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 5 files changed, 110 insertions(+)
+ create mode 100644 Choose your mark.php
+ create mode 100644 FizzBuzzReady.php
+ create mode 100644 My mark(if-else).php
+ create mode 100644 My mark(switch).php
+ create mode 100644 Ruberoid.php
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$  git commit --amend --reset-author
+[master 09bafc2] my first commit
+ Committer: ????»N?·?????°N?µ?»N <????»N?·?????°N?µ?»N>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 5 files changed, 110 insertions(+)
+ create mode 100644 Choose your mark.php
+ create mode 100644 FizzBuzzReady.php
+ create mode 100644 My mark(if-else).php
+ create mode 100644 My mark(switch).php
+ create mode 100644 Ruberoid.php
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$  git commit --amend --reset-author
+[master e4823d8] my first commit
+ Committer: ????»N?·?????°N?µ?»N <????»N?·?????°N?µ?»N>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 5 files changed, 110 insertions(+)
+ create mode 100644 Choose your mark.php
+ create mode 100644 FizzBuzzReady.php
+ create mode 100644 My mark(if-else).php
+ create mode 100644 My mark(switch).php
+ create mode 100644 Ruberoid.php
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$  git config --global --edit
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git commit -m"my first commit"
+On branch master
+nothing to commit, working tree clean
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git log
+commit e4823d83d3f511936dd1dcd34566dd2e691e579f
+Author: <D0><9F><D0><BE><D0><BB><D1><8C><D0><B7><D0><BE><D0><B2><D0><B0><D1><82><D0><B5><D0><BB><D1><8C> <<D0><9F><D0><BE><D0><BB><D1><8C><D0><B7><D0><BE><D0><B2><D0><B0><D1><82><D0><B5><D0><BB><D1>
+<8C>>
+Date:   Mon Dec 12 20:50:58 2016 +0200
+
+    my first commit
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ ls
+'Choose your mark.php'  'My mark(if-else).php'  Ruberoid.php
+FizzBuzzReady.php       'My mark(switch).php'
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ vim FizzBuzzReady.php
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   FizzBuzzReady.php
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git diff
+diff --git a/FizzBuzzReady.php b/FizzBuzzReady.php
+index 3b029f5..bda5f61 100644
+--- a/FizzBuzzReady.php
++++ b/FizzBuzzReady.php
+@@ -11,7 +11,7 @@ $Buzz = fgets($handle);
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ User@WIN-F15OM6UO87B MINGW6+$i = 0;
+ while ($i < $number) {
+ $i=$i+1;
+
+@@ -26,4 +26,4 @@ $i=$i+1;
+
+     }
+     echo "\n";
+-}
+\ No newline at end of file
++}
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git add FizzBuzzReady.php
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   FizzBuzzReady.php
+
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git commit -m"FizzBuzz updated"
+[master 9151dc3] FizzBuzz updated
+ Committer: ????»N?·?????°N?µ?»N <????»N?·?????°N?µ?»N>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git config --global user.name "Nikita Plashev"
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git config --global user.email you@example.com
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git log
+commit 9151dc3549b749c106369c36def469234924301c
+Author: <D0><9F><D0><BE><D0><BB><D1><8C><D0><B7><D0><BE><D0><B2><D0><B0><D1><82><D0><B5><D0><BB><D1><8C> <<D0><9F><D0><BE><D0><BB><D1><8C><D0><B7><D0><BE><D0><B2><D0><B0><D1><82><D0><B5><D0><BB><D1>
+<8C>>
+Date:   Mon Dec 12 21:07:36 2016 +0200
+
+    FizzBuzz updated
+
+commit e4823d83d3f511936dd1dcd34566dd2e691e579f
+Author: <D0><9F><D0><BE><D0><BB><D1><8C><D0><B7><D0><BE><D0><B2><D0><B0><D1><82><D0><B5><D0><BB><D1><8C> <<D0><9F><D0><BE><D0><BB><D1><8C><D0><B7><D0><BE><D0><B2><D0><B0><D1><82><D0><B5><D0><BB><D1>
+<8C>>
+Date:   Mon Dec 12 20:50:58 2016 +0200
+
+    my first commit
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ vim FizzBuzzReady.php
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   FizzBuzzReady.php
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git diff
+diff --git a/FizzBuzzReady.php b/FizzBuzzReady.php
+index bda5f61..26abb67 100644
+--- a/FizzBuzzReady.php
++++ b/FizzBuzzReady.php
+@@ -16,11 +16,11 @@ while ($i < $number) {
+ $i=$i+1;
+
+  if(($i % $Fizz) == 0 && ($i % $Buzz) == 0){
+-    echo FB;
++    echo "FB";
+   }elseif(($i % $Buzz) == 0){
+-    echo B;
++    echo "B";
+   }elseif(($i % $Fizz) == 0){
+-    echo F;
++    echo "F";
+   }else{
+     echo $i;
+
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git commit -m"FizzBuzz updated"
+On branch master
+Changes not staged for commit:
+        modified:   FizzBuzzReady.php
+
+no changes added to commit
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git add FizzBuzzReady.php
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git commit -m"FizzBuzz updated"
+[master 4d1a167] FizzBuzz updated
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git log
+commit 4d1a1675bdf0aa6f59fa824fb0315c2d41c34602
+Author: Nikita Plashev <you@example.com>
+Date:   Mon Dec 12 21:14:08 2016 +0200
+
+    FizzBuzz updated
+
+commit 9151dc3549b749c106369c36def469234924301c
+Author: <D0><9F><D0><BE><D0><BB><D1><8C><D0><B7><D0><BE><D0><B2><D0><B0><D1><82><D0><B5><D0><BB><D1><8C> <<D0><9F><D0><BE><D0><BB><D1><8C><D0><B7><D0><BE><D0><B2><D0><B0><D1><82><D0><B5><D0><BB><D1>
+<8C>>
+Date:   Mon Dec 12 21:07:36 2016 +0200
+
+    FizzBuzz updated
+
+commit e4823d83d3f511936dd1dcd34566dd2e691e579f
+Author: <D0><9F><D0><BE><D0><BB><D1><8C><D0><B7><D0><BE><D0><B2><D0><B0><D1><82><D0><B5><D0><BB><D1><8C> <<D0><9F><D0><BE><D0><BB><D1><8C><D0><B7><D0><BE><D0><B2><D0><B0><D1><82><D0><B5><D0><BB><D1>
+<8C>>
+Date:   Mon Dec 12 20:50:58 2016 +0200
+
+    my first commit
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/User/.ssh/id_rsa):
+Created directory '/c/Users/User/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/User/.ssh/id_rsa.
+Your public key has been saved in /c/Users/User/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:77XUXckynBPFL7yOZ/AR0xN4BLsHtvH4LsinX18sEew User@WIN-F15OM6UO87B
+The key's randomart image is:
++---[RSA 2048]----+
+|             .=o |
+|             oo+ |
+|             B+.o|
+|            o./o+|
+|        S    XEXo|
+|         .  ..O+.|
+|          o +=o++|
+|         . =.+B.o|
+|          ..=+...|
++----[SHA256]-----+
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ cat ~/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDLaqtYB4f72EVNyDHl09lS28ypLRTTH6LkIIc6bwj2+Tgx5pwb/B08ITkC6Ih208CC4RfWGwArriP/qr0J5fYYjBZFIiGybGhRQYG4ycw3Cd4CJ4jm/fg+XE1Zvar7SmcXKuexUZRqSmlCOmdNh71zYpF7l3nB7vC7nj6PaLPv7Lu4pwO1lLWB52DezFUpsz3tKkGpV1AwRewsGIOIwgdS/d0VenjEcMpPiipyXYw1CZ0QVb/+g4LWq9ydXiK/bXfUrfZNck9YbJ+NV9rvuBmlw6gZ+qp/USZlaEeMYurqS/X5nJO9nkRnFN5o/wL8aHdEPsYNMMheQ+aAAmOpUPzb User@WIN-F15OM6UO87B
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git remote -v
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git remote add origin git@github.com:NikitaPlashev/Home-work.git
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git remote -v
+origin  git@github.com:NikitaPlashev/Home-work.git (fetch)
+origin  git@github.com:NikitaPlashev/Home-work.git (push)
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git pull
+The authenticity of host 'github.com (192.30.253.112)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,192.30.253.112' (RSA) to the list of known hosts.
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git branch --set-upstream-to=origin master
+error: the requested upstream branch 'origin' does not exist
+hint:
+hint: If you are planning on basing your work on an upstream
+hint: branch that already exists at the remote, you may need to
+hint: run "git fetch" to retrieve it.
+hint:
+hint: If you are planning to push out a new local branch that
+hint: will track its remote counterpart, you may want to use
+hint: "git push -u" to set the upstream config as you push.
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git branch --set-upstream-to=origin/master master
+error: the requested upstream branch 'origin/master' does not exist
+hint:
+hint: If you are planning on basing your work on an upstream
+hint: branch that already exists at the remote, you may need to
+hint: run "git fetch" to retrieve it.
+hint:
+hint: If you are planning to push out a new local branch that
+hint: will track its remote counterpart, you may want to use
+hint: "git push -u" to set the upstream config as you push.
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git branch --set-upstream-to=origin/<branch> master
+bash: branch: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git branch --set-upstream-to=origin/<master> master
+bash: master: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git branch --set-upstream-to=origin master
+error: the requested upstream branch 'origin' does not exist
+hint:
+hint: If you are planning on basing your work on an upstream
+hint: branch that already exists at the remote, you may need to
+hint: run "git fetch" to retrieve it.
+hint:
+hint: If you are planning to push out a new local branch that
+hint: will track its remote counterpart, you may want to use
+hint: "git push -u" to set the upstream config as you push.
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git pull
+Warning: Permanently added the RSA host key for IP address '192.30.253.113' to the list of known hosts.
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git pull --set-upstream origin master
+error: unknown option `set-upstream'
+usage: git pull [<options>] [<repository> [<refspec>...]]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+
+Options related to merging
+    -r, --rebase[=<false|true|preserve|interactive>]
+                          incorporate changes by rebasing rather than merging
+    -n                    do not show a diffstat at the end of the merge
+    --stat                show a diffstat at the end of the merge
+    --log[=<n>]           add (at most <n>) entries from shortlog to merge commit message
+    --squash              create a single commit instead of doing a merge
+    --commit              perform a commit if the merge succeeds (default)
+    --edit                edit message before committing
+    --ff                  allow fast-forward
+    --ff-only             abort if fast-forward is not possible
+    --verify-signatures   verify that the named commit has a valid GPG signature
+    --autostash           automatically stash/stash pop before and after rebase
+    -s, --strategy <strategy>
+                          merge strategy to use
+    -X, --strategy-option <option=value>
+                          option for selected merge strategy
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+    --allow-unrelated-histories
+                          allow merging unrelated histories
+
+Options related to fetching
+    --all                 fetch from all remotes
+    -a, --append          append to .git/FETCH_HEAD instead of overwriting
+    --upload-pack <path>  path to upload pack on remote end
+    -f, --force           force overwrite of local branch
+    -t, --tags            fetch all tags and associated objects
+    -p, --prune           prune remote-tracking branches no longer on remote
+    --recurse-submodules[=<on-demand>]
+                          control recursive fetching of submodules
+    -j, --jobs[=<n>]      number of submodules pulled in parallel
+    --dry-run             dry run
+    -k, --keep            keep downloaded pack
+    --depth <depth>       deepen history of shallow clone
+    --unshallow           convert to a complete repository
+    --update-shallow      accept refs that update .git/shallow
+    --refmap <refmap>     specify fetch refmap
+
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git push --set-upstream origin master
+Counting objects: 13, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (13/13), 1.82 KiB | 0 bytes/s, done.
+Total 13 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), done.
+To github.com:NikitaPlashev/Home-work.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ git pull
+Already up-to-date.
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ $ lgit branch --set-upstream-to=origin/<br'Application Data'@ch --set-upstream-to=origin/<branch> Contacts/ branch --set-upstream-to=origin/<branch> master
+Cookies@
+Desktop/
+Documents/
+Downloads/
+Favorites/
+Links/
+'Local Settings'@
+Music/
+NTUSER.DAT
+NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TM.blf
+NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMConta                                            iner00000000000000000001.regtrans-ms
+NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMConta                                            iner00000000000000000002.regtrans-ms
+NetHood@
+Pictures/
+PrintHood@
+Recent@
+'Saved Games'/
+Searches/
+SendTo@
+Tracing/
+Videos/
+ntuser.dat.LOG1
+ntuser.dat.LOG2
+ntuser.ini
+''$'\320\223\320\273\320\260\320\262\320\275\320\276\320                                            \265'' '$'\320\274\320\265\320\275\321\216'@
+''$'\320\232\320\276\320\274\320\277\321\214\321\216\321                                            \202\320\265\321\200'' - '$'\320\257\321\200\320\273\321                                            \213\320\272''.lnk'*
+''$'\320\234\320\276\320\270'' '$'\320\264\320\276\320\2                                            72\321\203\320\274\320\265\320\275\321\202\321\213'@
+''$'\320\250\320\260\320\261\320\273\320\276\320\275\321                                            \213'@
+
+User@WIN-F15OM6UO87B MINGW64 ~
+$ cd Music/                                               $ lsgit branch --set-upstream-to=origin/<branch> mastergit branch --set-upstream-to=origin/<branch> m
+bash: branch: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ AppData/
+bash: AppData/: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ 'Application Data'@
+bash: Application Data@: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ Contacts/
+bash: Contacts/: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ Cookies@
+bash: Cookies@: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ Desktop/
+bash: Desktop/: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ Documents/
+bash: Documents/: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ Downloads/
+bash: Downloads/: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ Favorites/
+bash: Favorites/: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ Links/
+bash: Links/: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ 'Local Settings'@
+bash: Local Settings@: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ Music/
+bash: Music/: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ NTUSER.DAT
+bash: NTUSER.DAT: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TM.blf
+bash: NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TM.blf: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMConta                                            iner00000000000000000001.regtrans-ms
+bash: NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMConta: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMConta                                            iner00000000000000000002.regtrans-ms
+4 ~
+bash: User@WIN-F15OM6UO87B: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ $ ls
+bash: $: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ AppData/
+bash: AppData/: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ 'Application Data'@
+bash: Application Data@: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ Contacts/
+bash: Contacts/: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ Cookies@
+bash: Cookies@: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ Desktop/
+bash: Desktop/: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ Documents/
+bash: Documents/: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ Downloads/
+bash: Downloads/: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ Favorites/
+bash: Favorites/: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ Links/
+bash: Links/: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ 'Local Settings'@
+bash: Local Settings@: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ Music/
+bash: Music/: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ NTUSER.DAT
+bash: NTUSER.DAT: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TM.blf
+bash: NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TM.blf: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMConta                                            iner00000000000000000001.regtrans-ms
+bash: NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMConta: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMConta                                            iner00000000000000000002.regtrans-ms
+bash: NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMConta: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ NetHood@
+bash: NetHood@: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ Pictures/
+bash: Pictures/: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ PrintHood@
+bash: PrintHood@: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ Recent@
+bash: Recent@: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ 'Saved Games'/
+bash: Saved Games/: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ Searches/
+bash: Searches/: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ SendTo@
+bash: SendTo@: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ Tracing/
+bash: Tracing/: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ Videos/
+bash: Videos/: No such file or directory
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ ntuser.dat.LOG1
+bash: ntuser.dat.LOG1: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ ntuser.dat.LOG2
+bash: ntuser.dat.LOG2: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ ntuser.ini
+bash: ntuser.ini: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ ''$'\320\223\320\273\320\260\320\262\320\275\320\276\320                                            \265'' '$'\320\274\320\265\320\275\321\216'@
+bash: $'?\223?»?°???????                                            µ ???µ??N\216@': command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ ''$'\320\232\320\276\320\274\320\277\321\214\321\216\321                                            \202\320\265\321\200'' - '$'\320\257\321\200\320\273\321                                            \213\320\272''.lnk'*
+bash: $'?\232??????N\214N\216N                                            \202?µN\200 - ??N\200?»N                                            \213??.lnk*': command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ ''$'\320\234\320\276\320\270'' '$'\320\264\320\276\320\2                                            72\321\203\320\274\320\265\320\275\321\202\321\213'@
+bash: $'?\234???? ?????\002                                            72N\203???µ??N\202N\213@': command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ ''$'\320\250\320\260\320\261\320\273\320\276\320\275\321                                            \213'@
+bash: $'???°?±?»????N                                            \213@': command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ User@WIN-F15OM6UO87B MINGW64 ~
+bash: User@WIN-F15OM6UO87B: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ $ cd Music/
+bash: $: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ User@WIN-F15OM6UO87B MINGW64 ~/Music
+bash: User@WIN-F15OM6UO87B: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ $ ls
+bash: $: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ desktop.ini
+bash: desktop.ini: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ User@WIN-F15OM6UO87B MINGW64 ~/Music
+bash: User@WIN-F15OM6UO87B: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ $ ls -la
+bash: $: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ total 9
+bash: total: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ drwxr-xr-x 1 User 197121   0 Nov  6 01:36 ./
+bash: drwxr-xr-x: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ drwxr-xr-x 1 User 197121   0 Nov 29 00:25 ../
+bash: drwxr-xr-x: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ -rw-r--r-- 1 User 197121 504 Nov  6 01:36 desktop.ini
+bash: -rw-r--r--: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ User@WIN-F15OM6UO87B MINGW64 ~/Music
+bash: User@WIN-F15OM6UO87B: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ $ ls -lat
+bash: $: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ total 9
+bash: total: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ drwxr-xr-x 1 User 197121   0 Nov 29 00:25 ../
+bash: drwxr-xr-x: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ drwxr-xr-x 1 User 197121   0 Nov  6 01:36 ./
+bash: drwxr-xr-x: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ -rw-r--r-- 1 User 197121 504 Nov  6 01:36 desktop.ini
+bash: -rw-r--r--: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ User@WIN-F15OM6UO87B MINGW64 ~/Music
+bash: User@WIN-F15OM6UO87B: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ $ man ls
+bash: $: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ bash: man: command not found
+bash: bash:: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ User@WIN-F15OM6UO87B MINGW64 ~/Music
+bash: User@WIN-F15OM6UO87B: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ $ help ls
+bash: $: command not found
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ bash: help: no help topics match `ls'.  Try `help help' or `man -k ls' or                            `info ls'.
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/Music
+> $ ls --help
+> Usage: ls [OPTION]... [FILE]...
+> List information about the FILEs (the current directory by default).
+> Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
+>
+> Mandatory arguments to long options are mandatory for short options too.
+>   -a, --all                  do not ignore entries starting with .
+>   -A, --almost-all           do not list implied . and ..
+>       --author               with -l, print the author of each file
+>   -b, --escape               print C-style escapes for nongraphic charact                           ers
+>       --block-size=SIZE      scale sizes by SIZE before printing them; e.                           g.,
+>                                '--block-size=M' prints sizes in units of
+>                                1,048,576 bytes; see SIZE format below
+>   -B, --ignore-backups       do not list implied entries ending with ~
+>   -c                         with -lt: sort by, and show, ctime (time of                            last
+>                                modification of file status information);
+>                                with -l: show ctime and sort by name;
+>                                otherwise: sort by ctime, newest first
+>   -C                         list entries by columns
+>       --color[=WHEN]         colorize the output; WHEN can be 'always' (d                           efault
+>                                if omitted), 'auto', or 'never'; more info                            below
+>   -d, --directory            list directories themselves, not their conte                           nts
+>   -D, --dired                generate output designed for Emacs' dired mo                           de
+>   -f                         do not sort, enable -aU, disable -ls --color
+>   -F, --classify             append indicator (one of */=>@|) to entries
+>       --file-type            likewise, except do not append '*'
+>       --format=WORD          across -x, commas -m, horizontal -x, long -l                           ,
+>                                single-column -1, verbose -l, vertical -C
+>       --full-time            like -l --time-style=full-iso
+>   -g                         like -l, but do not list owner
+>       --group-directories-first
+>                              group directories before files;
+>                                can be augmented with a --sort option, but                            any
+>                                use of --sort=none (-U) disables grouping
+>   -G, --no-group             in a long listing, don't print group names
+>   -h, --human-readable       with -l and/or -s, print human readable size                           s
+>                                (e.g., 1K 234M 2G)
+>       --si                   likewise, but use powers of 1000 not 1024
+>   -H, --dereference-command-line
+>                              follow symbolic links listed on the command                            line
+>       --dereference-command-line-symlink-to-dir
+>                              follow each command line symbolic link
+>                                that points to a directory
+>       --hide=PATTERN         do not list implied entries matching shell P                           ATTERN
+>                                (overridden by -a or -A)
+>       --indicator-style=WORD  append indicator with style WORD to entry n                           ames:
+>                                none (default), slash (-p),
+>                                file-type (--file-type), classify (-F)
+>   -i, --inode                print the index number of each file
+>   -I, --ignore=PATTERN       do not list implied entries matching shell P                           ATTERN
+>   -k, --kibibytes            default to 1024-byte blocks for disk usage
+>   -l                         use a long listing format
+>   -L, --dereference          when showing file information for a symbolic
+>                                link, show information for the file the li                           nk
+>                                references rather than for the link itself
+>   -m                         fill width with a comma separated list of en                           tries
+>   -n, --numeric-uid-gid      like -l, but list numeric user and group IDs
+>   -N, --literal              print raw entry names (don't treat e.g. cont                           rol
+>                                characters specially)
+>   -o                         like -l, but do not list group information
+>   -p, --indicator-style=slash
+>                              append / indicator to directories
+>   -q, --hide-control-chars   print ? instead of nongraphic characters
+>       --show-control-chars   show nongraphic characters as-is (the defaul                           t,
+>                                unless program is 'ls' and output is a ter                           minal)
+>   -Q, --quote-name           enclose entry names in double quotes
+>       --quoting-style=WORD   use quoting style WORD for entry names:
+>                                literal, locale, shell, shell-always,
+>                                shell-escape, shell-escape-always, c, esca                           pe
+>   -r, --reverse              reverse order while sorting
+>   -R, --recursive            list subdirectories recursively
+>   -s, --size                 print the allocated size of each file, in bl                           ocks
+>   -S                         sort by file size, largest first
+>       --sort=WORD            sort by WORD instead of name: none (-U), siz                           e (-S),
+>                                time (-t), version (-v), extension (-X)
+>       --time=WORD            with -l, show time as WORD instead of defaul                           t
+>                                modification time: atime or access or use                            (-u);
+>                                ctime or status (-c); also use specified t                           ime
+>                                as sort key if --sort=time (newest first)
+>       --time-style=STYLE     with -l, show times using style STYLE:
+>                                full-iso, long-iso, iso, locale, or +FORMA                           T;
+>                                FORMAT is interpreted like in 'date'; if F                           ORMAT
+>                                is FORMAT1<newline>FORMAT2, then FORMAT1 a                           pplies
+>                                to non-recent files and FORMAT2 to recent                            files;
+>                                if STYLE is prefixed with 'posix-', STYLE
+>                                takes effect only outside the POSIX locale
+>   -t                         sort by modification time, newest first
+>   -T, --tabsize=COLS         assume tab stops at each COLS instead of 8
+>   -u                         with -lt: sort by, and show, access time;
+>                                with -l: show access time and sort by name                           ;
+>                                otherwise: sort by access time, newest fir                           st
+>   -U                         do not sort; list entries in directory order
+>   -v                         natural sort of (version) numbers within tex                           t
+>   -w, --width=COLS           set output width to COLS.  0 means no limit
+>   -x                         list entries by lines instead of by columns
+>   -X                         sort alphabetically by entry extension
+>   -Z, --context              print any security context of each file
+>   -1                         list one file per line.  Avoid '\n' with -q                            or -b
+>       --append-exe           append .exe if cygwin magic was needed
+>       --help     display this help and exit
+>       --version  output version information and exit
+>
+> The SIZE argument is an integer and optional unit (example: 10K is 10*102                           4).
+> Units are K,M,G,T,P,E,Z,Y (powers of 1024) or KB,MB,... (powers of 1000).
+>
+> Using color to distinguish file types is disabled both by default and
+> with --color=never.  With --color=auto, ls emits color codes only when
+> standard output is connected to a terminal.  The LS_COLORS environment
+> variable can change the settings.  Use the dircolors command to set it.
+>
+> Exit status:
+>  0  if OK,
+>  1  if minor problems (e.g., cannot access subdirectory),
+>  2  if serious trouble (e.g., cannot access command-line argument).
+>
+> GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
+> Report ls translation bugs to <http://translationproject.org/team/>
+> Full documentation at: <http://www.gnu.org/software/coreutils/ls>
+> or available locally via: info '(coreutils) ls invocation'
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/Music
+> $ cd ..
+>
+> User@WIN-F15OM6UO87B MINGW64 ~
+> $ mkdir -m755 test
+>
+> User@WIN-F15OM6UO87B MINGW64 ~
+> $ cd test
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test
+> $ cd ..
+>
+> User@WIN-F15OM6UO87B MINGW64 ~
+> $ ls -la
+> total 3202
+> drwxr-xr-x 1 User 197121       0 Dec 12 19:41 ./
+> drwxr-xr-x 1 User 197121       0 Nov  6 01:35 ../
+> drwxr-xr-x 1 User 197121       0 Nov  6 01:35 AppData/
+> lrwxrwxrwx 1 User 197121      29 Nov  6 01:35 'Application Data' -> /c/Us                           ers/User/AppData/Roaming/
+> drwxr-xr-x 1 User 197121       0 Nov  6 01:36 Contacts/
+> lrwxrwxrwx 1 User 197121      55 Nov  6 01:35 Cookies -> /c/Users/User/Ap                           pData/Roaming/Microsoft/Windows/Cookies/
+> drwxr-xr-x 1 User 197121       0 Dec 11 16:20 Desktop/
+> drwxr-xr-x 1 User 197121       0 Dec  1 21:25 Documents/
+> drwxr-xr-x 1 User 197121       0 Dec 12 19:21 Downloads/
+> drwxr-xr-x 1 User 197121       0 Nov  8 15:40 Favorites/
+> drwxr-xr-x 1 User 197121       0 Nov  6 01:36 Links/
+> lrwxrwxrwx 1 User 197121      27 Nov  6 01:35 'Local Settings' -> /c/User                           s/User/AppData/Local/
+> drwxr-xr-x 1 User 197121       0 Nov  6 01:36 Music/
+> -rw-r--r-- 1 User 197121 1572864 Dec 12 19:46 NTUSER.DAT
+> -rw-r--r-- 1 User 197121   65536 Nov  6 02:00 NTUSER.DAT{016888bd-6c6f-11                           de-8d1d-001e0bcde3ec}.TM.blf
+> -rw-r--r-- 1 User 197121  524288 Nov  6 02:00 NTUSER.DAT{016888bd-6c6f-11                           de-8d1d-001e0bcde3ec}.TMContainer00000000000000000001.regtrans-ms
+> -rw-r--r-- 1 User 197121  524288 Nov  6 02:00 NTUSER.DAT{016888bd-6c6f-11                           de-8d1d-001e0bcde3ec}.TMContainer00000000000000000002.regtrans-ms
+> lrwxrwxrwx 1 User 197121      65 Nov  6 01:35 NetHood -> '/c/Users/User/A                           ppData/Roaming/Microsoft/Windows/Network Shortcuts'/
+> drwxr-xr-x 1 User 197121       0 Nov  6 01:36 Pictures/
+> lrwxrwxrwx 1 User 197121      65 Nov  6 01:35 PrintHood -> '/c/Users/User                           /AppData/Roaming/Microsoft/Windows/Printer Shortcuts'/
+> lrwxrwxrwx 1 User 197121      54 Nov  6 01:35 Recent -> /c/Users/User/App                           Data/Roaming/Microsoft/Windows/Recent/
+> drwxr-xr-x 1 User 197121       0 Nov  6 01:36 'Saved Games'/
+> drwxr-xr-x 1 User 197121       0 Nov  6 01:36 Searches/
+> lrwxrwxrwx 1 User 197121      54 Nov  6 01:35 SendTo -> /c/Users/User/App                           Data/Roaming/Microsoft/Windows/SendTo/
+> drwxr-xr-x 1 User 197121       0 Nov 24 09:07 Tracing/
+> drwxr-xr-x 1 User 197121       0 Nov  6 01:36 Videos/
+> -rw-r--r-- 1 User 197121  262144 Dec 12 19:46 ntuser.dat.LOG1
+> -rw-r--r-- 1 User 197121       0 Nov  6 01:35 ntuser.dat.LOG2
+> -rw-r--r-- 1 User 197121      20 Nov  6 01:35 ntuser.ini
+> drwxr-xr-x 1 User 197121       0 Dec 12 19:41 test/
+> lrwxrwxrwx 1 User 197121      58 Nov  6 01:35 ''$'\320\223\320\273\320\26                           0\320\262\320\275\320\276\320\265'' '$'\320\274\320\265\320\275\321\216'                            -> '/c/Users/User/AppData/Roaming/Microsoft/Windows/Start Menu'/
+> -rwxr-xr-x 1 User 197121     359 Nov 29 00:25 ''$'\320\232\320\276\320\27                           4\320\277\321\214\321\216\321\202\320\265\321\200'' - '$'\320\257\321\200                           \320\273\321\213\320\272''.lnk'*
+> lrwxrwxrwx 1 User 197121      23 Nov  6 01:35 ''$'\320\234\320\276\320\27                           0'' '$'\320\264\320\276\320\272\321\203\320\274\320\265\320\275\321\202\3                           21\213' -> /c/Users/User/Documents/
+> lrwxrwxrwx 1 User 197121      57 Nov  6 01:35 ''$'\320\250\320\260\320\26                           1\320\273\320\276\320\275\321\213' -> /c/Users/User/AppData/Roaming/Micro                           soft/Windows/Templates/
+>
+> User@WIN-F15OM6UO87B MINGW64 ~
+> $ cd test
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test
+> $ git init
+> Initialized empty Git repository in C:/Users/User/test/.git/
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git
+> usage: git [--version] [--help] [-C <path>] [-c name=value]
+>            [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path                           ]
+>            [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+>            [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+>            <command> [<args>]
+>
+> These are common Git commands used in various situations:
+>
+> start a working area (see also: git help tutorial)
+>    clone      Clone a repository into a new directory
+>    init       Create an empty Git repository or reinitialize an existing                            one
+>
+> work on the current change (see also: git help everyday)
+>    add        Add file contents to the index
+>    mv         Move or rename a file, a directory, or a symlink
+>    reset      Reset current HEAD to the specified state
+>    rm         Remove files from the working tree and from the index
+>
+> examine the history and state (see also: git help revisions)
+>    bisect     Use binary search to find the commit that introduced a bug
+>    grep       Print lines matching a pattern
+>    log        Show commit logs
+>    show       Show various types of objects
+>    status     Show the working tree status
+>
+> grow, mark and tweak your common history
+>    branch     List, create, or delete branches
+>    checkout   Switch branches or restore working tree files
+>    commit     Record changes to the repository
+>    diff       Show changes between commits, commit and working tree, etc
+>    merge      Join two or more development histories together
+>    rebase     Reapply commits on top of another base tip
+>    tag        Create, list, delete or verify a tag object signed with GPG
+>
+> collaborate (see also: git help workflows)
+>    fetch      Download objects and refs from another repository
+>    pull       Fetch from and integrate with another repository or a local                            branch
+>    push       Update remote refs along with associated objects
+>
+> 'git help -a' and 'git help -g' list available subcommands and some
+> concept guides. See 'git help <command>' or 'git help <concept>'
+> to read about a specific subcommand or concept.
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ ls -la
+> total 12
+> drwxr-xr-x 1 User 197121 0 Dec 12 19:52 ./
+> drwxr-xr-x 1 User 197121 0 Dec 12 19:41 ../
+> drwxr-xr-x 1 User 197121 0 Dec 12 19:52 .git/
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git status
+> On branch master
+>
+> Initial commit
+>
+> nothing to commit (create/copy files and use "git add" to track)
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ vim
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ cd ..
+>
+> User@WIN-F15OM6UO87B MINGW64 ~
+> $ ls .ba*
+> ls: cannot access '.ba*': No such file or directory
+>
+> User@WIN-F15OM6UO87B MINGW64 ~
+> $
+>
+> User@WIN-F15OM6UO87B MINGW64 ~
+> $ cd /
+>
+> User@WIN-F15OM6UO87B MINGW64 /
+> $ cd -
+> /c/Users/User
+>
+> User@WIN-F15OM6UO87B MINGW64 ~
+> $ cd test
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ cp /
+> LICENSE.txt        etc/               tmp/
+> ReleaseNotes.html  git-bash.exe       unins000.dat
+> bin/               git-cmd.exe        unins000.exe
+> cmd/               mingw64/           unins000.msg
+> dev/               proc/              usr/
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ cp /
+> LICENSE.txt        etc/               tmp/
+> ReleaseNotes.html  git-bash.exe       unins000.dat
+> bin/               git-cmd.exe        unins000.exe
+> cmd/               mingw64/           unins000.msg
+> dev/               proc/              usr/
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ cd C:.git/
+> HEAD         description  info/        refs/
+> config       hooks/       objects/
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ cd C:
+>
+> User@WIN-F15OM6UO87B MINGW64 /c
+> $ ls
+> '$RECYCLE.BIN'/            'Program Files'/              Windows/
+> Activator/                 'Program Files (x86)'/        hiberfil.sys
+> 'Documents and Settings'@  ProgramData/                  pagefile.sys
+> Intel/                     'System Volume Information'/
+> OpenServer/                Users/
+>
+> User@WIN-F15OM6UO87B MINGW64 /c
+> $ cd OpenServer/domains/Domashka/
+>
+> User@WIN-F15OM6UO87B MINGW64 /c/OpenServer/domains/Domashka
+> $ ls
+> 'Choose your mark.php'  'My mark(if-else).php'  Ruberoid.php
+> FizzBuzzReady.php       'My mark(switch).php'
+>
+> User@WIN-F15OM6UO87B MINGW64 /c/OpenServer/domains/Domashka
+> $ cp * ~/test/
+>
+> User@WIN-F15OM6UO87B MINGW64 /c/OpenServer/domains/Domashka
+> $ cd -
+> /c
+>
+> User@WIN-F15OM6UO87B MINGW64 /c
+> $ cd ~/test/
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ ls
+> 'Choose your mark.php'  'My mark(if-else).php'  Ruberoid.php
+> FizzBuzzReady.php       'My mark(switch).php'
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git status
+> On branch master
+>
+> Initial commit
+>
+> Untracked files:
+>   (use "git add <file>..." to include in what will be committed)
+>
+>         Choose your mark.php
+>         FizzBuzzReady.php
+>         My mark(if-else).php
+>         My mark(switch).php
+>         Ruberoid.php
+>
+> nothing added to commit but untracked files present (use "git add" to tra                           ck)
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git add
+> Nothing specified, nothing added.
+> Maybe you wanted to say 'git add .'?
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git add Choose\ your\ mark.php
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git status
+> On branch master
+>
+> Initial commit
+>
+> Changes to be committed:
+>   (use "git rm --cached <file>..." to unstage)
+>
+>         new file:   Choose your mark.php
+>
+> Untracked files:
+>   (use "git add <file>..." to include in what will be committed)
+>
+>         FizzBuzzReady.php
+>         My mark(if-else).php
+>         My mark(switch).php
+>         Ruberoid.php
+>
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git add FizzBuzzReady.php
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git add My\ mark\(*
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git status
+> On branch master
+>
+> Initial commit
+>
+> Changes to be committed:
+>   (use "git rm --cached <file>..." to unstage)
+>
+>         new file:   Choose your mark.php
+>         new file:   FizzBuzzReady.php
+>         new file:   My mark(if-else).php
+>         new file:   My mark(switch).php
+>
+> Untracked files:
+>   (use "git add <file>..." to include in what will be committed)
+>
+>         Ruberoid.php
+>
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git add Ruberoid.php
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git status^C
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git status
+> On branch master
+>
+> Initial commit
+>
+> Changes to be committed:
+>   (use "git rm --cached <file>..." to unstage)
+>
+>         new file:   Choose your mark.php
+>         new file:   FizzBuzzReady.php
+>         new file:   My mark(if-else).php
+>         new file:   My mark(switch).php
+>         new file:   Ruberoid.php
+>
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git commit
+> Aborting commit due to empty commit message.
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git commit -m"my first commit"
+> [master (root-commit) 3b747b8] my first commit
+>  Committer: ????»N?·?????°N?µ?»N <????»N?·?????°N?µ?»N>
+> Your name and email address were configured automatically based
+> on your username and hostname. Please check that they are accurate.
+> You can suppress this message by setting them explicitly. Run the
+> following command and follow the instructions in your editor to edit
+> your configuration file:
+>
+>     git config --global --edit
+>
+> After doing this, you may fix the identity used for this commit with:
+>
+>     git commit --amend --reset-author
+>
+>  5 files changed, 110 insertions(+)
+>  create mode 100644 Choose your mark.php
+>  create mode 100644 FizzBuzzReady.php
+>  create mode 100644 My mark(if-else).php
+>  create mode 100644 My mark(switch).php
+>  create mode 100644 Ruberoid.php
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $  git commit --amend --reset-author
+> [master 09bafc2] my first commit
+>  Committer: ????»N?·?????°N?µ?»N <????»N?·?????°N?µ?»N>
+> Your name and email address were configured automatically based
+> on your username and hostname. Please check that they are accurate.
+> You can suppress this message by setting them explicitly. Run the
+> following command and follow the instructions in your editor to edit
+> your configuration file:
+>
+>     git config --global --edit
+>
+> After doing this, you may fix the identity used for this commit with:
+>
+>     git commit --amend --reset-author
+>
+>  5 files changed, 110 insertions(+)
+>  create mode 100644 Choose your mark.php
+>  create mode 100644 FizzBuzzReady.php
+>  create mode 100644 My mark(if-else).php
+>  create mode 100644 My mark(switch).php
+>  create mode 100644 Ruberoid.php
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $  git commit --amend --reset-author
+> [master e4823d8] my first commit
+>  Committer: ????»N?·?????°N?µ?»N <????»N?·?????°N?µ?»N>
+> Your name and email address were configured automatically based
+> on your username and hostname. Please check that they are accurate.
+> You can suppress this message by setting them explicitly. Run the
+> following command and follow the instructions in your editor to edit
+> your configuration file:
+>
+>     git config --global --edit
+>
+> After doing this, you may fix the identity used for this commit with:
+>
+>     git commit --amend --reset-author
+>
+>  5 files changed, 110 insertions(+)
+>  create mode 100644 Choose your mark.php
+>  create mode 100644 FizzBuzzReady.php
+>  create mode 100644 My mark(if-else).php
+>  create mode 100644 My mark(switch).php
+>  create mode 100644 Ruberoid.php
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $  git config --global --edit
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git commit -m"my first commit"
+> On branch master
+> nothing to commit, working tree clean
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git status
+> On branch master
+> nothing to commit, working tree clean
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git log
+> commit e4823d83d3f511936dd1dcd34566dd2e691e579f
+> Author: <D0><9F><D0><BE><D0><BB><D1><8C><D0><B7><D0><BE><D0><B2><D0><B0><D1><82><D0><B5><D0><BB><D1><8C> <<D0><9F><D0><BE><D0><BB><D1><8C><D0><B7><D0><BE><D0><B2><D0><B0><D1><82><D0><B5><D0><BB><D1>
+> <8C>>
+> Date:   Mon Dec 12 20:50:58 2016 +0200
+>
+>     my first commit
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ ls
+> 'Choose your mark.php'  'My mark(if-else).php'  Ruberoid.php
+> FizzBuzzReady.php       'My mark(switch).php'
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ vim FizzBuzzReady.php
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git status
+> On branch master
+> Changes not staged for commit:
+>   (use "git add <file>..." to update what will be committed)
+>   (use "git checkout -- <file>..." to discard changes in working directory)
+>
+>         modified:   FizzBuzzReady.php
+>
+> no changes added to commit (use "git add" and/or "git commit -a")
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git diff
+> diff --git a/FizzBuzzReady.php b/FizzBuzzReady.php
+> index 3b029f5..bda5f61 100644
+> --- a/FizzBuzzReady.php
+> +++ b/FizzBuzzReady.php
+> @@ -11,7 +11,7 @@ $Buzz = fgets($handle);
+>
+>
+>
+> -$i = 1;
+> +$i = 0;
+>  while ($i < $number) {
+>  $i=$i+1;
+>
+> @@ -26,4 +26,4 @@ $i=$i+1;
+>
+>      }
+>      echo "\n";
+> -}
+> \ No newline at end of file
+> +}
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git add FizzBuzzReady.php
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git status
+> On branch master
+> Changes to be committed:
+>   (use "git reset HEAD <file>..." to unstage)
+>
+>         modified:   FizzBuzzReady.php
+>
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git commit -m"FizzBuzz updated"
+> [master 9151dc3] FizzBuzz updated
+>  Committer: ????»N?·?????°N?µ?»N <????»N?·?????°N?µ?»N>
+> Your name and email address were configured automatically based
+> on your username and hostname. Please check that they are accurate.
+> You can suppress this message by setting them explicitly:
+>
+>     git config --global user.name "Your Name"
+>     git config --global user.email you@example.com
+>
+> After doing this, you may fix the identity used for this commit with:
+>
+>     git commit --amend --reset-author
+>
+>  1 file changed, 2 insertions(+), 2 deletions(-)
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git config --global user.name "Nikita Plashev"
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git config --global user.email you@example.com
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git log
+> commit 9151dc3549b749c106369c36def469234924301c
+> Author: <D0><9F><D0><BE><D0><BB><D1><8C><D0><B7><D0><BE><D0><B2><D0><B0><D1><82><D0><B5><D0><BB><D1><8C> <<D0><9F><D0><BE><D0><BB><D1><8C><D0><B7><D0><BE><D0><B2><D0><B0><D1><82><D0><B5><D0><BB><D1>
+> <8C>>
+> Date:   Mon Dec 12 21:07:36 2016 +0200
+>
+>     FizzBuzz updated
+>
+> commit e4823d83d3f511936dd1dcd34566dd2e691e579f
+> Author: <D0><9F><D0><BE><D0><BB><D1><8C><D0><B7><D0><BE><D0><B2><D0><B0><D1><82><D0><B5><D0><BB><D1><8C> <<D0><9F><D0><BE><D0><BB><D1><8C><D0><B7><D0><BE><D0><B2><D0><B0><D1><82><D0><B5><D0><BB><D1>
+> <8C>>
+> Date:   Mon Dec 12 20:50:58 2016 +0200
+>
+>     my first commit
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ vim FizzBuzzReady.php
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git status
+> On branch master
+> Changes not staged for commit:
+>   (use "git add <file>..." to update what will be committed)
+>   (use "git checkout -- <file>..." to discard changes in working directory)
+>
+>         modified:   FizzBuzzReady.php
+>
+> no changes added to commit (use "git add" and/or "git commit -a")
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git diff
+> diff --git a/FizzBuzzReady.php b/FizzBuzzReady.php
+> index bda5f61..26abb67 100644
+> --- a/FizzBuzzReady.php
+> +++ b/FizzBuzzReady.php
+> @@ -16,11 +16,11 @@ while ($i < $number) {
+>  $i=$i+1;
+>
+>   if(($i % $Fizz) == 0 && ($i % $Buzz) == 0){
+> -    echo FB;
+> +    echo "FB";
+>    }elseif(($i % $Buzz) == 0){
+> -    echo B;
+> +    echo "B";
+>    }elseif(($i % $Fizz) == 0){
+> -    echo F;
+> +    echo "F";
+>    }else{
+>      echo $i;
+>
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git commit -m"FizzBuzz updated"
+> On branch master
+> Changes not staged for commit:
+>         modified:   FizzBuzzReady.php
+>
+> no changes added to commit
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git add FizzBuzzReady.php
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git commit -m"FizzBuzz updated"
+> [master 4d1a167] FizzBuzz updated
+>  1 file changed, 3 insertions(+), 3 deletions(-)
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git log
+> commit 4d1a1675bdf0aa6f59fa824fb0315c2d41c34602
+> Author: Nikita Plashev <you@example.com>
+> Date:   Mon Dec 12 21:14:08 2016 +0200
+>
+>     FizzBuzz updated
+>
+> commit 9151dc3549b749c106369c36def469234924301c
+> Author: <D0><9F><D0><BE><D0><BB><D1><8C><D0><B7><D0><BE><D0><B2><D0><B0><D1><82><D0><B5><D0><BB><D1><8C> <<D0><9F><D0><BE><D0><BB><D1><8C><D0><B7><D0><BE><D0><B2><D0><B0><D1><82><D0><B5><D0><BB><D1>
+> <8C>>
+> Date:   Mon Dec 12 21:07:36 2016 +0200
+>
+>     FizzBuzz updated
+>
+> commit e4823d83d3f511936dd1dcd34566dd2e691e579f
+> Author: <D0><9F><D0><BE><D0><BB><D1><8C><D0><B7><D0><BE><D0><B2><D0><B0><D1><82><D0><B5><D0><BB><D1><8C> <<D0><9F><D0><BE><D0><BB><D1><8C><D0><B7><D0><BE><D0><B2><D0><B0><D1><82><D0><B5><D0><BB><D1>
+> <8C>>
+> Date:   Mon Dec 12 20:50:58 2016 +0200
+>
+>     my first commit
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ ssh-keygen
+> Generating public/private rsa key pair.
+> Enter file in which to save the key (/c/Users/User/.ssh/id_rsa):
+> Created directory '/c/Users/User/.ssh'.
+> Enter passphrase (empty for no passphrase):
+> Enter same passphrase again:
+> Your identification has been saved in /c/Users/User/.ssh/id_rsa.
+> Your public key has been saved in /c/Users/User/.ssh/id_rsa.pub.
+> The key fingerprint is:
+> SHA256:77XUXckynBPFL7yOZ/AR0xN4BLsHtvH4LsinX18sEew User@WIN-F15OM6UO87B
+> The key's randomart image is:
+> +---[RSA 2048]----+
+> |             .=o |
+> |             oo+ |
+> |             B+.o|
+> |            o./o+|
+> |        S    XEXo|
+> |         .  ..O+.|
+> |          o +=o++|
+> |         . =.+B.o|
+> |          ..=+...|
+> +----[SHA256]-----+
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ cat ~/.ssh/id_rsa.pub
+> ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDLaqtYB4f72EVNyDHl09lS28ypLRTTH6LkIIc6bwj2+Tgx5pwb/B08ITkC6Ih208CC4RfWGwArriP/qr0J5fYYjBZFIiGybGhRQYG4ycw3Cd4CJ4jm/fg+XE1Zvar7SmcXKuexUZRqSmlCOmdNh71zYpF7l3nB7vC7nj6PaLPv7Lu4pwO1lLWB52DezFUpsz3tKkGpV1AwRewsGIOIwgdS/d0VenjEcMpPiipyXYw1CZ0QVb/+g4LWq9ydXiK/bXfUrfZNck9YbJ+NV9rvuBmlw6gZ+qp/USZlaEeMYurqS/X5nJO9nkRnFN5o/wL8aHdEPsYNMMheQ+aAAmOpUPzb User@WIN-F15OM6UO87B
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git remote -v
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git remote add origin git@github.com:NikitaPlashev/Home-work.git
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git remote -v
+> origin  git@github.com:NikitaPlashev/Home-work.git (fetch)
+> origin  git@github.com:NikitaPlashev/Home-work.git (push)
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git pull
+> The authenticity of host 'github.com (192.30.253.112)' can't be established.
+> RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+> Are you sure you want to continue connecting (yes/no)? yes
+> Warning: Permanently added 'github.com,192.30.253.112' (RSA) to the list of known hosts.
+> There is no tracking information for the current branch.
+> Please specify which branch you want to merge with.
+> See git-pull(1) for details.
+>
+>     git pull <remote> <branch>
+>
+> If you wish to set tracking information for this branch you can do so with:
+>
+>     git branch --set-upstream-to=origin/<branch> master
+>
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git branch --set-upstream-to=origin master
+> error: the requested upstream branch 'origin' does not exist
+> hint:
+> hint: If you are planning on basing your work on an upstream
+> hint: branch that already exists at the remote, you may need to
+> hint: run "git fetch" to retrieve it.
+> hint:
+> hint: If you are planning to push out a new local branch that
+> hint: will track its remote counterpart, you may want to use
+> hint: "git push -u" to set the upstream config as you push.
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git branch --set-upstream-to=origin/master master
+> error: the requested upstream branch 'origin/master' does not exist
+> hint:
+> hint: If you are planning on basing your work on an upstream
+> hint: branch that already exists at the remote, you may need to
+> hint: run "git fetch" to retrieve it.
+> hint:
+> hint: If you are planning to push out a new local branch that
+> hint: will track its remote counterpart, you may want to use
+> hint: "git push -u" to set the upstream config as you push.
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git branch --set-upstream-to=origin/<branch> master
+> bash: branch: No such file or directory
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git branch --set-upstream-to=origin/<master> master
+> bash: master: No such file or directory
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git branch --set-upstream-to=origin master
+> error: the requested upstream branch 'origin' does not exist
+> hint:
+> hint: If you are planning on basing your work on an upstream
+> hint: branch that already exists at the remote, you may need to
+> hint: run "git fetch" to retrieve it.
+> hint:
+> hint: If you are planning to push out a new local branch that
+> hint: will track its remote counterpart, you may want to use
+> hint: "git push -u" to set the upstream config as you push.
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git pull
+> Warning: Permanently added the RSA host key for IP address '192.30.253.113' to the list of known hosts.
+> There is no tracking information for the current branch.
+> Please specify which branch you want to merge with.
+> See git-pull(1) for details.
+>
+>     git pull <remote> <branch>
+>
+> If you wish to set tracking information for this branch you can do so with:
+>
+>     git branch --set-upstream-to=origin/<branch> master
+>
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git pull --set-upstream origin master
+> error: unknown option `set-upstream'
+> usage: git pull [<options>] [<repository> [<refspec>...]]
+>
+>     -v, --verbose         be more verbose
+>     -q, --quiet           be more quiet
+>     --progress            force progress reporting
+>
+> Options related to merging
+>     -r, --rebase[=<false|true|preserve|interactive>]
+>                           incorporate changes by rebasing rather than merging
+>     -n                    do not show a diffstat at the end of the merge
+>     --stat                show a diffstat at the end of the merge
+>     --log[=<n>]           add (at most <n>) entries from shortlog to merge commit message
+>     --squash              create a single commit instead of doing a merge
+>     --commit              perform a commit if the merge succeeds (default)
+>     --edit                edit message before committing
+>     --ff                  allow fast-forward
+>     --ff-only             abort if fast-forward is not possible
+>     --verify-signatures   verify that the named commit has a valid GPG signature
+>     --autostash           automatically stash/stash pop before and after rebase
+>     -s, --strategy <strategy>
+>                           merge strategy to use
+>     -X, --strategy-option <option=value>
+>                           option for selected merge strategy
+>     -S, --gpg-sign[=<key-id>]
+>                           GPG sign commit
+>     --allow-unrelated-histories
+>                           allow merging unrelated histories
+>
+> Options related to fetching
+>     --all                 fetch from all remotes
+>     -a, --append          append to .git/FETCH_HEAD instead of overwriting
+>     --upload-pack <path>  path to upload pack on remote end
+>     -f, --force           force overwrite of local branch
+>     -t, --tags            fetch all tags and associated objects
+>     -p, --prune           prune remote-tracking branches no longer on remote
+>     --recurse-submodules[=<on-demand>]
+>                           control recursive fetching of submodules
+>     -j, --jobs[=<n>]      number of submodules pulled in parallel
+>     --dry-run             dry run
+>     -k, --keep            keep downloaded pack
+>     --depth <depth>       deepen history of shallow clone
+>     --unshallow           convert to a complete repository
+>     --update-shallow      accept refs that update .git/shallow
+>     --refmap <refmap>     specify fetch refmap
+>
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git push --set-upstream origin master
+> Counting objects: 13, done.
+> Delta compression using up to 4 threads.
+> Compressing objects: 100% (13/13), done.
+> Writing objects: 100% (13/13), 1.82 KiB | 0 bytes/s, done.
+> Total 13 (delta 4), reused 0 (delta 0)
+> remote: Resolving deltas: 100% (4/4), done.
+> To github.com:NikitaPlashev/Home-work.git
+>  * [new branch]      master -> master
+> Branch master set up to track remote branch master from origin.
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ git pull
+> Already up-to-date.
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ $ lgit branch --set-upstream-to=origin/<br'Application Data'@ch --set-upstream-to=origin/<branch> Contacts/ branch --set-upstream-to=origin/<branch> master
+> Cookies@
+> Desktop/
+> Documents/
+> Downloads/
+> Favorites/
+> Links/
+> 'Local Settings'@
+> Music/
+> NTUSER.DAT
+> NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TM.blf
+> NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMConta                                            iner00000000000000000001.regtrans-ms
+> NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMConta                                            iner00000000000000000002.regtrans-ms
+> NetHood@
+> Pictures/
+> PrintHood@
+> Recent@
+> 'Saved Games'/
+> Searches/
+> SendTo@
+> Tracing/
+> Videos/
+> ntuser.dat.LOG1
+> ntuser.dat.LOG2
+> ntuser.ini
+> ''$'\320\223\320\273\320\260\320\262\320\275\320\276\320                                            \265'' '$'\320\274\320\265\320\275\321\216'@
+> ''$'\320\232\320\276\320\274\320\277\321\214\321\216\321                                            \202\320\265\321\200'' - '$'\320\257\321\200\320\273\321                                            \213\320\272''.lnk'*
+> ''$'\320\234\320\276\320\270'' '$'\320\264\320\276\320\2                                            72\321\203\320\274\320\265\320\275\321\202\321\213'@
+> ''$'\320\250\320\260\320\261\320\273\320\276\320\275\321                                            \213'@
+>
+> User@WIN-F15OM6UO87B MINGW64 ~
+> $ cd Music/                                               $ lsgit branch --set-upstream-to=origin/<branch> mastergit branch --set-upstream-to=origin/<branch> m
+> bash: branch: No such file or directory
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ AppData/
+> bash: AppData/: No such file or directory
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ 'Application Data'@
+> bash: Application Data@: command not found
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ Contacts/
+> bash: Contacts/: No such file or directory
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ Cookies@
+> bash: Cookies@: command not found
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ Desktop/
+> bash: Desktop/: No such file or directory
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ Documents/
+> bash: Documents/: No such file or directory
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ Downloads/
+> bash: Downloads/: No such file or directory
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ Favorites/
+> bash: Favorites/: No such file or directory
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ Links/
+> bash: Links/: No such file or directory
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ 'Local Settings'@
+> bash: Local Settings@: command not found
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ Music/
+> bash: Music/: No such file or directory
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ NTUSER.DAT
+> bash: NTUSER.DAT: command not found
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TM.blf
+> bash: NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TM.blf: command not found
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMConta                                            iner00000000000000000001.regtrans-ms
+> bash: NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMConta: command not found
+>
+> User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+> $ NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMConta                                            iner00000000000000000002.regtrans-ms
+> ^C
+
+User@WIN-F15OM6UO87B MINGW64 ~/test (master)
+$ ls

@@ -13,9 +13,8 @@
      * @return integer
      */
     function my_sum($arr) {
-        $res=0;
         foreach ($arr as $ar) {
-            $res  += $ar;
+            $res +=$ar;
         }
     return($res);
     }
@@ -36,12 +35,12 @@
      * @return string
      */
     function shortener($shortMe) {
-       $arr = explode(' ',(trim($shortMe)));
+       $arr = explode(' ',($shortMe));
        foreach ($arr as $ar) {
-           if (strlen($ar)>6) {
-           $res[] = ((substr($ar,0,6)) . '*');
-           } else $res[] = $ar; 
-       }
+             if (strlen($ar)>6) {
+               $res[] = ((substr($ar,0,6)) . '*');
+            } else $res[] = $ar; 
+        }
     return implode(" ", $res);
 }
 
@@ -59,14 +58,11 @@
      * @return number
      */
     function compare_ends($arr) {
-        $i=0;
         foreach ($arr as $ar) {
-            if (strlen($ar)>=2) {
-                 $a = str_split($ar); 
-                 $b =end ($a);
-                   if ($a[0]===$b) {
-                      $i++;
-                    }
+           $a = str_split($ar); 
+            end($a);
+            if (((key($a))>=1) && ($a[0]===end($a))) {
+                $i++;
             }   
         }
         return $i;
