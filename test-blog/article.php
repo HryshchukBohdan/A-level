@@ -4,6 +4,7 @@
     
     $link = db_connect();
     $article = articles_get($link, $_GET["id"]);
+    print_r($article);
 
     include("views/article.php");
 ?>

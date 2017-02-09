@@ -5,7 +5,7 @@
     $link = db_connect();
     $articles = articles_all($link);
     //$tages = tages_();
-print_r($articles);
+    print_r($articles);
 
 
     include("views/articles.php");

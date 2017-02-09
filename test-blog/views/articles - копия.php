@@ -8,13 +8,6 @@
     <body>
         <div class="container">
             <h1> Названия блога</h1>
-            
-<form action="index.php" method="post" style="float:center">
-<input type="submit" name=btn2 value="Sort">
-<input type="submit" name=btn2 value="Sort">
-</form>
-            
-            
             <div>
                 <?php foreach($articles as $artic): ?>
                 <div class="article">                    
@@ -22,12 +15,13 @@
                         <?=$artic["post_title"]?></a></h3>
                     <p><?=$artic['post_text']?></p>
                     <em><?=$artic['post_create_datetime']?></em>
-                    <div>                                   
-                        <?php foreach($artic[tag_id_name] as $id_tag => $tag_name): ?>
-                        <em><a href="article.php?id=<?= $id_tag?>">
+                    
+                    
+                    
+                    <?php foreach($artic[tag_id_name] as $id_tag => $tag_name): ?>
+                    <em><a href="article.php?id=<?= $id_tag?>">
                         <?=$tag_name?></a> </em>
-                        <?php endforeach ?>
-                    </div> 
+                    <?php endforeach ?>
                 </div>
                 <?php endforeach ?>              
             </div>
