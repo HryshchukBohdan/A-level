@@ -68,17 +68,7 @@ function articles_get($link, $post_id){
                         post.post_id=%d
                     group by
                         post.post_id desc",(int)$post_id) ;
-    $query_com = sprintf("select 
-                            comment.comment_id,
-                            comment.comment_parent_id,
-                            comment.comment_text,
-                            comment.comment_datetime  
-                    from
-                            comment
-                    where
-                        post_id=%d and comment_parent_id is NULL
-                    group by
-                        comment_id desc",(int)$post_id) ;
+
    // $query = sprintf("select * from post where post_id=%d",(int)$post_id);
     
                //             comment.comment_id,
@@ -93,10 +83,6 @@ function articles_get($link, $post_id){
     if (!$result)
         die(mysqli_error($link));
     
-    $result_com = mysqli_query($link, $query_com);
-    
-    if (!$result)
-        die(mysqli_error($link));
     
     $article = mysqli_fetch_assoc($result);
         
@@ -104,24 +90,7 @@ function articles_get($link, $post_id){
         $tag_id = explode(",", $article[tag_id]);
         $tag_id_name = array_combine($tag_id, $tag_name);
         $article[tag_id_name] = $tag_id_name;
-    
-    
-    
-    $n_rows = mysqli_num_rows($result_com);
-    
-    $articles_com = array();
-    
-    for ($i=0; $i < $n_rows; $i++)
-    {
-        $row = mysqli_fetch_assoc($result_com);
-        $adi=2;
-        $articles_com[$row[comment_id]] = $row;
-    }
-        $article[article_com] =$articles_com;
-    
-    
-    
-    
+  
     
     return $article;
     
@@ -136,9 +105,9 @@ function articles_com($link, $id){
                     from 
                         comment
                     where
-                        comment_parent_id=%d
+                        post_id=%d
                     group by
-                        comment_id desc",(int)$id);
+                        comment_id",(int)$id);
     $result = mysqli_query($link, $query);
            
     if (!$result)
@@ -157,6 +126,31 @@ function articles_com($link, $id){
     }
         
     return $com_per;
+}
+
+function com_print($com_pr, $perens) {
+    foreach ($com_pr as $com) {
+        print_r($com[comment_parent_id]);
+       //      if ($com[comment_parent_id] == $perens) {
+ //   echo 2017;                      
+       
+  //  }
+        
+        if ($com[comment_parent_id] == $perens) {
+    echo("<div>");                      
+        echo("<p>");
+            echo($com[comment_text]);
+            echo($com[comment_datetime]);
+            echo(" /" . " /" . " /" . " /" . $com[comment_id]);
+        echo("</p>");
+     echo("</div>"); 
+        //$com[comment_id];
+            echo(com_print($com_pr, $com[comment_id]));
+          
+    }
+                               
+    } 
+    
 }
 
 

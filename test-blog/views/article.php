@@ -6,7 +6,8 @@
     </head>
     <body>
         <div class="container">
-            <h1> Названия блога</h1>
+            <p> <p>dvsgdgs</p> 
+            <h1> Названия блога</h1></p>
             <div>
                 <div class="article">
                     <h3><?=$article['post_title']?></h3>
@@ -21,30 +22,8 @@
                         <?=$tag_name?></a> </em>
                         <?php endforeach ?>
                     </div> 
-                    
-                    <div>                                   
-                        <?php foreach($article[article_com] as $id => $com): ?>
-                        <p><?=$com[comment_text]?> <?=$com[comment_datetime]?></p>
-<?php do { require_once("db.php");
-                        
-    $link = db_connect();
-    $com_per = articles_com($link, $id);
-                        print_r($com_per);             
-?>  
-                    <div>                                   
-                        <?php foreach($com_per as $id => $com): ?>
-                        <p><?=$com[comment_text]?> <?=$com[comment_datetime]?></p>
-                        <?php endforeach ?>
-                    </div>   
-                        <?php } while(empty($com_per)); ?>
-                        
-                        
-                        
-                        
-                        
-                        
-                        <?php endforeach ?>
-                    </div>                    
+                    <?=com_print($com_pr, 0); ?>
+                   
                     
                     
                     
