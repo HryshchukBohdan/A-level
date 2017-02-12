@@ -128,9 +128,9 @@ function articles_com($link, $id){
     return $com_per;
 }
 
-function com_print($com_pr, $perens) {
+function com_print($com_pr, $perens, $text_indent) {
     foreach ($com_pr as $com) {
-        print_r($com[comment_parent_id]);
+        //print_r($com[comment_parent_id]);
        //      if ($com[comment_parent_id] == $perens) {
  //   echo 2017;                      
        
@@ -138,14 +138,18 @@ function com_print($com_pr, $perens) {
         
         if ($com[comment_parent_id] == $perens) {
     echo("<div>");                      
-        echo("<p>");
-            echo($com[comment_text]);
+       // echo("<p>");
+            echo('<p style="text-indent:'. $text_indent .'">');
+          // echo("<blockquote>");
+            echo($com[comment_text]. " ");
             echo($com[comment_datetime]);
-            echo(" /" . " /" . " /" . " /" . $com[comment_id]);
-        echo("</p>");
+        //echo(" /" . " /" . " /" . " /" . $com[comment_id]);
+          // echo("</blockquote>"); 
+            echo("<p>");
+        //echo("</p>");
      echo("</div>"); 
         //$com[comment_id];
-            echo(com_print($com_pr, $com[comment_id]));
+            echo(com_print($com_pr, $com[comment_id], $text_indent+50));
           
     }
                                

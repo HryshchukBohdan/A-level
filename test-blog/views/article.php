@@ -22,7 +22,7 @@
                         <?=$tag_name?></a> </em>
                         <?php endforeach ?>
                     </div> 
-                    <?=com_print($com_pr, 0); ?>
+                    <?=com_print($com_pr, 0, 0); ?>
                    
                     
                     
