@@ -7,21 +7,33 @@
     </head>
     <body>
         <div class="container">
-            <h1> Названия блога</h1>
+            
+             <h1><?=$tag_title; ?></h1>
+
+        
+            
+<form action="index.php" method="post" style="float:center">
+<input type="submit" name=btn2 value="Sort">
+<input type="submit" name=btn2 value="Sort">
+</form>
+            
+            
             <div>
-                <?php foreach($articles as $artic): ?>
-                <div class="article">                    
-                   <h3><a href="article.php?id=<?= $artic[post_id]?>">
+                <?php foreach($article as $artic): ?>
+                <div class="article"> 
+                    
+                    
+                    
+                      <h3><a href="article.php?id=<?= $artic[post_id]?>">
                         <?=$artic["post_title"]?></a></h3>
                     <p><?=$artic['post_text']?></p>
                     <em><?=$artic['post_create_datetime']?></em>
-                    
-                    
-                    
-                    <?php foreach($artic[tag_id_name] as $id_tag => $tag_name): ?>
-                    <em><a href="article.php?id=<?= $id_tag?>">
+                    <div>                                   
+                        <?php foreach($artic[tag_id_name] as $id_tag => $tag_name): ?>
+                        <em><a href="articles_tag.php?id_tag=<?= $id_tag?>">
                         <?=$tag_name?></a> </em>
-                    <?php endforeach ?>
+                        <?php endforeach ?>
+                    </div> 
                 </div>
                 <?php endforeach ?>              
             </div>
