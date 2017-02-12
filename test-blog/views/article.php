@@ -18,7 +18,7 @@
                     
                     <div>                                   
                         <?php foreach($article[tag_id_name] as $id_tag => $tag_name): ?>
-                        <em><a href="article.php?id=<?= $id_tag?>">
+                        <em><a href="articles_tag.php?id_tag=<?= $id_tag?>">
                         <?=$tag_name?></a> </em>
                         <?php endforeach ?>
                     </div> 

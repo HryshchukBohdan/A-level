@@ -96,6 +96,52 @@ function articles_get($link, $post_id){
     
 }
 
+function articles_tag($link, $post_id){
+    $query = sprintf("select 
+                        post.post_title,
+                        post.post_text,
+                        post.post_create_datetime,
+                        tag.tag_title,
+                        tag.tag_title,
+                        count(post.post_id) as tag_n,
+                        group_concat(tag.tag_title) as tag_name,
+                        group_concat(tag.tag_id) as tag_id      
+                    from
+                        post
+                        left join post_to_tag on (post.post_id=post_to_tag.post_id)
+                            left join tag on (post_to_tag.tag_id=tag.tag_id)
+                    where
+                        post.post_id=%d
+                    group by
+                        post.post_id desc",(int)$post_id) ;
+
+   // $query = sprintf("select * from post where post_id=%d",(int)$post_id);
+    
+               //             comment.comment_id,
+               //         comment.comment_parent_id,
+              //          comment.comment_text,
+              //          comment.comment_datetime,
+    
+    
+    
+    $result = mysqli_query($link, $query);
+    
+    if (!$result)
+        die(mysqli_error($link));
+    
+    
+    $article = mysqli_fetch_assoc($result);
+        
+        $tag_name = explode(",", $article[tag_name]);
+        $tag_id = explode(",", $article[tag_id]);
+        $tag_id_name = array_combine($tag_id, $tag_name);
+        $article[tag_id_name] = $tag_id_name;
+  
+    
+    return $article;
+    
+}
+
 function articles_com($link, $id){
     $query = sprintf("select 
                             comment.comment_id,
