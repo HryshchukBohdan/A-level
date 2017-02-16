@@ -7,24 +7,11 @@
     </head>
     <body>
         <div class="container">
-            
              <h1><?=$tag_title; ?></h1>
-
-        
-            
-<form action="index.php" method="post" style="float:center">
-<input type="submit" name=btn2 value="Sort">
-<input type="submit" name=btn2 value="Sort">
-</form>
-            
-            
             <div>
                 <?php foreach($article as $artic): ?>
                 <div class="article"> 
-                    
-                    
-                    
-                      <h3><a href="article.php?id=<?= $artic[post_id]?>">
+                    <h3><a href="article.php?id=<?= $artic[post_id]?>">
                         <?=$artic["post_title"]?></a></h3>
                     <p><?=$artic['post_text']?></p>
                     <em><?=$artic['post_create_datetime']?></em>
@@ -40,8 +27,6 @@
             <footer>
                 <p> подвальчик </p>
             </footer>
-            
-            
         </div>
     </body>
 </html>

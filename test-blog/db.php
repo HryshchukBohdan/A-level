@@ -9,5 +9,4 @@ function db_connect(){
 return $link;
 }
 
-    echo (db);
 ?>
