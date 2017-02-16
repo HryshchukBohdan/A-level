@@ -1,103 +1,48 @@
 <?php
 class House
 {
+    public $n_kv_na_etaz;
+    public $n_etaz_d;
+    public $n_kv_poiska;
+    public $n_kv_pod;
+    public $n_pod;
     public $n_etaz;
-    public $n_kv;
-    public $n_kv_p;
-
-
-    public $kvartir_na_etaje;
-    public $etajey_v_dome;
-
-
-    public $kvartir_v_padike;
-    public $etaz;
-    public $podezd;
+    
     //передача данных из объекта в конструктор
     public function __construct()
     {   
-        $this->$etaz = $this->n_pod();
+        echo "Vvedit nomer kvartiri poiska:\n";
+        $handle = fopen ("php://stdin","r");
+        $this->n_kv_poiska = fgets($handle);
+
+        echo "Vvedit kolichestvo kvartir na etaze:\n";
+        $handle = fopen ("php://stdin","r");
+        $this->n_kv_na_etaz = fgets($handle);
+
+        echo "Vvedit kolichestvo etazei doma:\n";
+        $handle = fopen ("php://stdin","r");
+        $this->n_etaz_d = fgets($handle);
     }
 
-    public function n_pod() 
-    {
-       $this->$n_kv_pod = $this->$n_etaz * $this->$n_kv_etaz;
-       return $this->$n_kv_pod; 
-    }
-
-    public function VVod() 
-    {
-        echo "Vuberit kol etazei:\n";
-        $handle = fopen ("php://stdin","r");
-        $this->$n_etaz= fgets($handle);
-
-        echo "Vuberit kol kvartir na etaze:\n";
-        $handle = fopen ("php://stdin","r");
-        $this->$n_kv_etaz= fgets($handle);
-
-        echo "Vuberit kol kvartiru poiska:\n";
-        $handle = fopen ("php://stdin","r");
-        $this->$n_kv_p= fgets($handle);
+    public function schot() {
+        $this->n_kv_pod = $this->n_kv_na_etaz * $this->n_etaz_d;
+        echo $this->n_kv_pod;
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-        echo "Vuberit class:\n";
-        print_r($class_u);
+       // $this->type = $type;
+      //  $this->nomer_kvartiri = $this->enterNumber();;
+    
+}
+ /*   //ввод номера квартиры пользователем
+    function enterNumber(){
+        echo "Пожалуйста введите номер квартиры:\n";
         $handle = fopen ("php://stdin","r");
-        $this->$class_p= fgets($handle);
-
-        if ($this->$class_p == $class_u[0]) {
-            echo "Vuberit type:\n";
-            print_r($Lux);
-            $handle = fopen ("php://stdin","r");
-            $this->$type_p= fgets($handle);
-        }
-        elseif ($this->$class_p == $class_u[1]) {
-            echo "Vuberit type:\n";
-            print_r($Norm);
-            $handle = fopen ("php://stdin","r");
-            $this->$type_p= fgets($handle);
-        }
-        elseif ($this->$class_p == $class_u[2]) {
-            echo "Vuberit type:\n";
-            print_r($Lux);
-            $handle = fopen ("php://stdin","r");
-            $this->$type_p= fgets($handle);
-        }
-
-
-        //$this->type = $type;
-       // $this->nomer_kvartiri = $this->enterNumber();;
-    }
-    //ввод номера квартиры пользователем
-    public function Number(){
-        echo "Vvedite № kvartiri:\n";
-        $handle = fopen ("php://stdin","r");
-        $this->$nom_kvar= fgets($handle);
+        return $kv= fgets($handle);
     }
     //определение по типу дома, количества этажей и количества квартир на этаже
     public function type()
     {
-        if ($this->$class_p ==) {
-            # code...
-        }
-
-
-
-
-
-
         if ($this->type == 'SLT_9_7') {
             $this->kvartir_na_etaje = 4;
             $this->etajey_v_dome = 9;
@@ -134,4 +79,7 @@ $obj2 = new House('SLT_9_7');
 $obj2->type();
 $obj2->start();
 $obj2->kv_pojezd();
-$obj2->etajPodjezd();5 */
+$obj2->etajPodjezd();*/
+
+$obj = new House();
+$obj->schot();
