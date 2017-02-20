@@ -7,7 +7,8 @@
     </head>
     <body>
         <div class="container">
-             <h1><?=$tag_title; ?></h1>
+            <center><h1><?=$tag_title; ?></h1></center>             
+            <a href="admin"> Панель редактирования</a>
             <div>
                 <?php foreach($article as $artic): ?>
                 <div class="article"> 
@@ -22,7 +23,7 @@
                         <?php endforeach ?>
                     </div> 
                 </div>
-                <?php endforeach ?>              
+                    <?php endforeach ?>              
             </div>
             <footer>
                 <p> подвальчик </p>

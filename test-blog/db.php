@@ -5,8 +5,7 @@ function db_connect(){
         or die("Error!: " . mysqli_error($link));
     if(!mysqli_set_charset($link, "utf8")){
         printf("Error!: " . mysql_error($link));  
-}
-return $link;
+    }   return $link;
 }
 
 ?>

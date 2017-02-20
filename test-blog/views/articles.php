@@ -8,15 +8,15 @@
     <body>
         <div class="container">
             <div class="title"><h1> Названия блога</h1></div>
+            <a href="admin"> Панель редактирования</a>
         <div>
     <form action="" method="post" class="admin">
-        <button class="new" type="submit" name="sub" value="true">Туда</button>
-        <button class="new" type="submit" name="sub" value="false">Сюда</button>
+        <p style="text-align: right"><button class="new" type="submit" name="sub" value="true">Туда</button>
+            <button class="new" type="submit" name="sub" value="false">Сюда</button></p>
     </form>
         </div>      
-            <div>
-                <?php foreach($articles as $artic): ?>
-                <div class="article">                    
+             <div class="article">
+                <?php foreach($articles as $artic): ?>                              
                    <h3><a href="article.php?id=<?= $artic[post_id]?>">
                         <?=$artic["post_title"]?></a></h3>
                     <p><?=$artic['post_text']?></p>
@@ -30,12 +30,12 @@
                     </div> 
                     
                         <em><?=$article['teg_title']?></em>
-                </div>
-                <?php endforeach ?>              
+                
+                <?php endforeach ?>  
             </div>
+        </div>
             <footer>
                 <p> подвальчик </p>
             </footer>
-        </div>
     </body>
 </html>

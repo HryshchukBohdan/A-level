@@ -160,13 +160,13 @@ function com_print($com_pr, $perens, $text_indent) {
     foreach ($com_pr as $com) {
  
         if ($com[comment_parent_id] == $perens) {
-    echo("<div>");                      
-            echo('<p style="text-indent:'. $text_indent .'">');
+    echo("<div class='coment'>");                      
+            echo('<p style="text-indent:'. $text_indent .'em">');
             echo($com[comment_text]. " ");
             echo($com[comment_datetime]);
             echo("<p>");
      echo("</div>"); 
-            echo(com_print($com_pr, $com[comment_id], $text_indent+50));
+            echo(com_print($com_pr, $com[comment_id], $text_indent+2));
         }           
     }   
 }
