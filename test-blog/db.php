@@ -7,5 +7,3 @@ function db_connect(){
         printf("Error!: " . mysql_error($link));  
     }   return $link;
 }
-
-?>

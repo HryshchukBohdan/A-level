@@ -1,4 +1,5 @@
 <?php
+
     require_once("db.php");
     require_once("models/articles.php");
     
@@ -7,4 +8,3 @@
     print_r($_POST["sub"]);
 
     include("views/articles.php");
-?>

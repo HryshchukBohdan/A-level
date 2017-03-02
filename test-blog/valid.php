@@ -5,8 +5,6 @@ $link = db_connect();
     $query = "SELECT * FROM admin_ka" ;
     $result = mysqli_query($link, $query);
 
-
-
 //$res = $valid ->fetchAll();
     $n_rows = mysqli_num_rows($result);
     
@@ -15,7 +13,6 @@ $link = db_connect();
     for ($i=0; $i < $n_rows; $i++)
     {
     $row = mysqli_fetch_assoc($result);
-        
         
         print_r($row);
 //for($i=0;$i<count($res);$i++){

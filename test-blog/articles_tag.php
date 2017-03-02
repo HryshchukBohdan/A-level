@@ -1,4 +1,5 @@
 <?php
+
     require_once("db.php");
     require_once("models/articles.php");
     
@@ -11,4 +12,3 @@
     }
 
     include("views/articles_tag.php");
-?>

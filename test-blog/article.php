@@ -1,4 +1,5 @@
 <?php
+
     require_once("db.php");
     require_once("models/articles.php");
     
@@ -7,4 +8,3 @@
     $com_pr = articles_com($link, $_GET["id"]);
 
     include("views/article.php");
-?>
