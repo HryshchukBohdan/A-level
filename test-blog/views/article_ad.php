@@ -8,11 +8,11 @@
     <body>
         <div class="container">
             <div class="title"><h1> Названия блога</h1></div>
-                <form action="index.php?action=add" method="POST">
-					<p><input name="post_title" class="form-control" placeholder="Название записи"></p>
+                <form action="index.php?action=<?=$_GET['action']?>&id=<?=$_GET['id']?>" method="POST">
+					<p><input value="<?=$article[post_title]?>" name="post_title" class="form-control" placeholder="Название записи"></p>
 
-					<p><textarea name="post_text" placeholder="Краткое содержание статьи" class="form-control name=" id="" cols="30" rows="10"></textarea></p>
-                    <p><input name="tag_text_all" class="form-control" placeholder="Теги через запятую"></p>
+					<p><textarea name="post_text" placeholder="Краткое содержание статьи" class="form-control name=" id="" cols="30" rows="10"><?=$article[post_text]?></textarea></p>
+                    <p><input name="tag_text_all" class="form-control" placeholder="Теги через запятую" value="<?=$article[tag_name]?>"></p>
 					
 					<p><input type="submit" class="btn btn-danger btn-block" value="Сохранить"></p>
 				</form>

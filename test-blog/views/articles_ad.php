@@ -39,10 +39,10 @@
         </th>  
         <th>
             <div class="vline">
-                <p style="text-indent: 1.5em"> <a href="index.php?action=edit&?id=<?= $artic[post_id]?>"> редактирование </a>|</p></div>
+                <p style="text-indent: 1.5em"> <a href="index.php?action=edit&id=<?= $artic[post_id]?>"> редактирование </a>|</p></div>
         </th>
         <th>
-            <a href="index.php?action=del&?id=<?= $artic[post_id]?>"><p style="text-indent: 0.5em"> удаление </p></a>
+            <a href="index.php?action=del&id=<?= $artic[post_id]?>"><p style="text-indent: 0.5em"> удаление </p></a>
         </th>
      </tr>          
     <?php endforeach ?>         
