@@ -2,6 +2,7 @@
 function articles_all($link, $t_s){
 
     if ($t_s == "true") {
+
     $query = "select 
                         post.post_id,
                         post.post_title,
@@ -86,8 +87,7 @@ function articles_get($link, $post_id) {
     $result = mysqli_query($link, $query);
     
     if (!$result)
-        die(mysqli_error($link));
-    
+        die(mysqli_error($link));    
     
     $article = mysqli_fetch_assoc($result);
         
@@ -116,9 +116,9 @@ function articles_tag($link, $tag_id){
     if (!$result)
         die(mysqli_error($link));
         
-        $n_rows = mysqli_num_rows($result);
+    $n_rows = mysqli_num_rows($result);
     
-    $articles = array();
+    $article = array();
     
     for ($i=0; $i < $n_rows; $i++)
     {
@@ -154,7 +154,7 @@ function articles_com($link, $id){
     for ($i=0; $i < $n_rows; $i++)
     {
         $row = mysqli_fetch_assoc($result);
-        $com_per[$row[comment_id]] = $row;
+        $com_per[$row['comment_id']] = $row;
     }
         
     return $com_per;
@@ -171,7 +171,7 @@ function com_print($com_pr, $perens, $text_indent) {
             echo($com[comment_text]. " ");
             echo($com[comment_datetime]);
             echo("<p>");
-     echo("</div>"); 
+    echo("</div>"); 
             echo(com_print($com_pr, $com[comment_id], $text_indent+2));
         }           
     }   
@@ -189,17 +189,15 @@ function articles_new($link, $post_title, $post_text, $tag_name) {
     $post = "insert into post (post_title, post_text, post_create_datetime) value ('%s', '%s', now())";
 
     $query_p = sprintf($post, mysqli_real_escape_string($link, $post_title), mysqli_real_escape_string($link, $post_text));
-
     $result_p = mysqli_query($link, $query_p);
         
     if (!$result_p)
         die(mysqli_error($link));
-
     
     $qwery_t = "select * from tag";
     $result_t = mysqli_query($link, $qwery_t);
     
-    if (!$result_p)
+    if (!$result_t)
         die(mysqli_error($link));
     
     $n_rows = mysqli_num_rows($result_t);    
@@ -213,7 +211,6 @@ function articles_new($link, $post_title, $post_text, $tag_name) {
     $tag_name_prihod = explode(",", $tag_name);
     $tag_name_prihod = array_map(trim, $tag_name_prihod);
 
-
     $query_id_p = "SELECT 
                         MAX(post_id) 
                     FROM post" ;
@@ -225,7 +222,6 @@ function articles_new($link, $post_title, $post_text, $tag_name) {
 
     $post_id = mysqli_fetch_assoc($result_id);
     $post_id = $post_id['MAX(post_id)'];
-
 
     foreach ($tags as $tag) {
         foreach ($tag_name_prihod as $tag_n) {
@@ -296,81 +292,82 @@ function articles_new($link, $post_title, $post_text, $tag_name) {
 }
 
 function articles_edit($link, $id, $post_title, $post_text, $tag_text_all) {
-    print_r($id);
-    print_r($post_title);
-    print_r($post_text);
-    print_r($tag_text_all);
 
     $post_title = trim($post_title);
     $post_text = trim($post_text);
-    $id = (int)$id;
     
     if ($post_title == "") {
         return false;
     }
     
-    $post = "update post set post_title='%s', post_text='%s', post_update_datetime=now() where post_id='%d'";
+    $post = "UPDATE post SET post_title = '%s', post_text = '%s', post_create_datetime = now() WHERE post_id = '%d'";
 
-    $query_p = sprintf($post, mysqli_real_escape_string($link, $post_title), 
-                                mysqli_real_escape_string($link, $post_text), $id);
-
+    $query_p = sprintf($post, mysqli_real_escape_string($link, $post_title), mysqli_real_escape_string($link, $post_text), mysqli_real_escape_string($link, $id));
     $result_p = mysqli_query($link, $query_p);
         
     if (!$result_p)
         die(mysqli_error($link));
-/*
+
     $qwery_t = "select * from tag";
     $result_t = mysqli_query($link, $qwery_t);
-    
-    if (!$result_p)
+
+    if (!$result_t)
         die(mysqli_error($link));
-    
-    $n_rows = mysqli_num_rows($result_t);    
-       
+
+    $n_rows = mysqli_num_rows($result_t);
+
     for ($i=0; $i < $n_rows; $i++)
     {
-        $row = mysqli_fetch_assoc($result_t);     
+        $row = mysqli_fetch_assoc($result_t);
         $tags[] = $row;
     }
-    
-    $tag_name_prihod = explode(",", $tag_name);
-    $tag_name_prihod = array_map(trim, $tag_name_prihod);
 
+    $qwery_t_po_id = "select tag.tag_id, tag.tag_title from tag left join post_to_tag on (post_to_tag.tag_id=tag.tag_id) WHERE post_to_tag.post_id = '$id'";
+    $result_t_po_id = mysqli_query($link, $qwery_t_po_id);
 
-    $query_id_p = "SELECT 
-                        MAX(post_id) 
-                    FROM post" ;
-
-    $result_id = mysqli_query($link, $query_id_p);
-           
-    if (!$result_id)
+    if (!$result_t_po_id)
         die(mysqli_error($link));
 
-    $post_id = mysqli_fetch_assoc($result_id);
-    $post_id = $post_id['MAX(post_id)'];
+    $n_rows_id = mysqli_num_rows($result_t_po_id);
 
+    $tags_po_id = array();
 
-    foreach ($tags as $tag) {
+    for ($i=0; $i < $n_rows_id; $i++)
+    {
+        $row = mysqli_fetch_assoc($result_t_po_id);
+        $tags_po_id[] = $row;
+    }
+
+    $tag_name_prihod = explode(",", $tag_text_all);
+    $tag_name_prihod = array_map(trim, $tag_name_prihod);
+
+    foreach ($tags_po_id as $tag) {
         foreach ($tag_name_prihod as $tag_n) {
             if ($tag['tag_title'] == $tag_n) {
-                $query_in = "INSERT INTO 
-                                    post_to_tag (post_id, tag_id) 
-                            VALUES 
-                                    (" . $post_id . ", " . $tag['tag_id'] . ")" ;
 
-                mysqli_query($link, $query_in);
+                $tag_ob_del_id[] = $tag['tag_id'];
+                $tag_new_del[] = $tag_n;
+
+            } else {
+
+                $tag_del[] = $tag['tag_id'];
+                $tag_new[] = $tag_n;
             }
         }
     }
 
-    foreach ($tags as $tag) {
-        $tags_new[] = $tag['tag_title'];
+    $tag_del = array_diff(array_unique($tag_del), $tag_ob_del_id);
+    $tag_new = array_diff(array_unique($tag_new), $tag_new_del);
+
+    foreach ($tag_del as $del) {
+
+        $query_pt = sprintf("delete from post_to_tag where post_id='%d' and tag_id='%d'", $id, $del);
+        mysqli_query($link, $query_pt);
     }
 
-    $tags_new_diff = array_diff($tag_name_prihod, $tags_new);
+    $i=0;
 
-    $i = null;
-    foreach ($tags_new_diff as $tag) {
+    foreach ($tag_new as $tag) {
         $query_in = "INSERT INTO 
                             tag (tag_title) 
                     VALUES 
@@ -380,7 +377,7 @@ function articles_edit($link, $id, $post_title, $post_text, $tag_text_all) {
         $i++;
     }
 
-    $query_li = "SELECT 
+    $query_li = "SELECT
                     tag_id 
                 FROM 
                     tag 
@@ -389,13 +386,13 @@ function articles_edit($link, $id, $post_title, $post_text, $tag_text_all) {
                 LIMIT " . $i ;
 
     $result_li = mysqli_query($link, $query_li);
-          
+
     if (!$result_li)
         die(mysqli_error($link));
 
     $n_rows = mysqli_num_rows($result_li);
     $tag_id_to_post = array();
-    
+
     for ($i=0; $i < $n_rows; $i++)
     {
         $row = mysqli_fetch_assoc($result_li);
@@ -405,20 +402,17 @@ function articles_edit($link, $id, $post_title, $post_text, $tag_text_all) {
     $query_in = "INSERT INTO 
                         post_to_tag (post_id, tag_id) 
                 VALUES 
-                        (" ;
+                        (";
 
     foreach ($tag_id_to_post as $value) {
-        $query_in .= $post_id . ", " . $value . "), (";
-    
+        $query_in .= $id . ", " . $value . "), (";
+
     }
 
     $query_in = substr($query_in, 0, -3);
     mysqli_query($link, $query_in);
-    */
-    return true; 
 
-
-
+    return true;
 }
 
 function articles_delete($link, $id) {
@@ -448,7 +442,9 @@ function articles_delete($link, $id) {
         die(mysqli_error($link));
     
     $n_rows = mysqli_num_rows($result_t);    
-       
+     
+    $tags = array();
+
     for ($i=0; $i < $n_rows; $i++)
     {
         $row = mysqli_fetch_assoc($result_t);     
@@ -456,6 +452,7 @@ function articles_delete($link, $id) {
     }
 
     foreach ($tags as $id) {
+
         $query = sprintf("delete from tag where tag_id='%d'", $id);
         $result = mysqli_query($link, $query);
         
@@ -465,4 +462,9 @@ function articles_delete($link, $id) {
 
 return true;
 
+}
+
+function article_intro($text, $len = 250) {
+
+    return mb_substr($text, 0, $len);
 }

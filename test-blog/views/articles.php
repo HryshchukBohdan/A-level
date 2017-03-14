@@ -19,7 +19,7 @@
                 <?php foreach($articles as $artic): ?>                              
                    <h3><a href="article.php?id=<?= $artic[post_id]?>">
                         <?=$artic["post_title"]?></a></h3>
-                    <p><?=$artic['post_text']?></p>
+                    <p><?=article_intro($artic['post_text'])?></p>
                     <em><?=$artic['post_create_datetime']?></em>
                     
                     <div>                                   
