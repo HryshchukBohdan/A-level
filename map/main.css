@@ -1,0 +1,35 @@
+#map {
+    height: 100%;
+    width: 70%;
+    margin: 20px 20px 20px 5px;
+    float: right;
+}
+
+input.btn {
+    width: 60px;
+}
+
+#add {
+    margin-bottom: 10px ;
+}
+
+#saved_loc {
+    height: 90%;
+    overflow-y: scroll;
+}
+
+.left-bar {
+    float: left;
+    margin: 20px 5px 20px 20px;
+    width: 25%;
+}
+
+input {
+    width: 80%;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
