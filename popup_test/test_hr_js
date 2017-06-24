@@ -1,0 +1,117 @@
+window.onload = function() {
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'https://code.jquery.com/jquery-3.2.1.min.js';
+    document.getElementsByTagName('head')[0].appendChild(script);
+
+    var style = document.createElement('style');
+        style.textContent = '.popup-btn-open-hr, .popup-btn-close-hr {' +
+            'display: flex;' +
+            'border-radius: 50%;' +
+            'background: #57b0ff;' +
+            'color: white;' +
+            'font-weight: bold;' +
+            'position: fixed;' +
+            'right: 16px;' +
+            'bottom: 16px;' +
+            'z-index: 999;' +
+        '}' +
+        '.popup-btn-open-hr {' +
+            'height: 45px;' +
+            'width: 45px;' +
+        '}' +
+        '.popup-btn-close-hr {' +
+            'height: 33px;' +
+            'width: 33px;' +
+        '}' +
+        '.popup-btn-open-hr span {' +
+            'margin: auto;' +
+            'width: 29px;' +
+            'height: 32px;' +
+            'line-height: 32px;' +
+            'text-align: center;' +
+            'font-size: 25px;' +
+        '}' +
+        '.popup-btn-close-hr span {' +
+            'margin: auto;' +
+            'width: 20px;' +
+            'height: 29px;' +
+            'line-height: 29px;' +
+            'text-align: center;' +
+            'font-size: 20px;' +
+        '}' +
+        '.popup-content-hr {' +
+            'position: fixed;' +
+            'right: 31px;' +
+            'bottom: 31px;' +
+            'z-index: 998;' +
+            'width: 240px;' +
+        '}' +
+        '.popup-content-hr .popup-top-hr {' +
+            'background: #c9c9c9;' +
+            'padding: 5px 16px 5px 16px;' +
+            'border-radius: 5px 5px 0 0;' +
+            'display: flex;' +
+            'justify-content: space-between;' +
+            'align-items: center;' +
+        '}' +
+        '.popup-content-hr .popup-author-hr {' +
+            'flex-grow: 3;' +
+        '}.' +
+        'popup-content-hr .popup-bottom-hr {' +
+            'padding: 12px 16px 12px 16px;' +
+            'background: #ffffff;' +
+            'border-radius: 0 0 5px 5px;' +
+        '}.' +
+        'popup-content-hr img {' +
+            'background-color: darkcyan;' +
+            'border-radius: 50%;' +
+            'width: 33px;' +
+            'height: 33px;' +
+            'margin-right: 5px;' +
+        '}';
+
+        document.getElementsByTagName('head')[0].appendChild(style);
+        document.getElementsByTagName('head')[0].appendChild(script);
+
+    script.addEventListener('load', function(){
+        jq321 = $.noConflict(true);
+        jq321(document).ready(function() {
+
+            // create DOM
+            jq321("body").append('<div class="popup-btn-open-hr"><span>&#9993;</span></div>').append('<div class="popup-content-hr"></div>');
+            jq321(".popup-btn-open-hr").hide();
+
+            jq321(".popup-content-hr").append('<div class="popup-top-hr"></div>').append('<div class="popup-bottom-hr"></div>').append('<div class="popup-btn-close-hr"></div>');
+
+            jq321(".popup-content-hr .popup-top-hr").append('<img src="">').append('<div class="popup-author-hr"></div>').append('<span id="popup-close-hr"></span>');
+            jq321(".popup-content-hr .popup-btn-close-hr").append('<span></span>');
+
+            jq321(".popup-content-hr .popup-top-hr .popup-author-hr").append('<b></b>').append('<br/>').append('<small></small>');
+
+            jq321(".popup-content-hr .popup-btn-close-hr span, #popup-close-hr").append('&times;');
+
+
+            jq321.getJSON('https://dev.nexusmedia-ua.com/devtest/', function(data) {
+
+                jq321('.popup-content-hr .popup-top-hr img').attr("src", data.messages[0].image);
+                jq321('.popup-content-hr .popup-top-hr .popup-author-hr b').append(data.messages[0].name);
+                jq321('.popup-content-hr .popup-top-hr .popup-author-hr small').append(data.messages[0].title);
+                jq321('.popup-content-hr .popup-bottom-hr').append(data.messages[0].message);
+            });
+
+            jq321('#popup-close-hr, .popup-btn-close-hr').click(function () {
+                jq321(".popup-content-hr").hide();
+                jq321(".popup-btn-close-hr").hide();
+                jq321(".popup-btn-open-hr").show();
+
+            });
+
+            jq321('.popup-btn-open-hr').click(function () {
+                jq321(".popup-content-hr").show();
+                jq321(".popup-btn-close-hr").show();
+                jq321(".popup-btn-open-hr").hide()
+            });
+        });
+    }, false);
+};
